@@ -1,0 +1,171 @@
+/***或许已经过时了*******************************/
+
+/* extra rules for even and odd rows */
+.colom {
+	background-color: #F5F5F5;
+}
+
+.even {
+	background: #eee;
+}
+
+.odd {
+	
+}
+
+.row {
+	background-color: #EBEBEB;
+}
+/**********************************/
+
+/** From new-style.css *****************************/
+.vieworder_row_top {
+	float: left;
+	min-width: 850px;
+	width: 100%;
+	font-size: 12px;
+	padding-top: 1px;
+	margin-bottom: 2px;
+}
+
+.vieworder_row_top.head {
+	height: 12px;
+	font-size: 14px;
+	color: #0899C9;
+}
+
+.vieworder_row_top a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.vieworder_row {
+	min-width: 850px;
+	width: 100%;
+	height: 25px;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 3px;
+	border-top: 1px dotted #CCC;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.vieworder_row.dot {
+	border-bottom: #236fab dotted 1px;
+	border-style: solid;
+	border-top-style: dotted;
+}
+
+.vieworder_row:hover {
+	background-color: #F5F5F5; /**#CAE1FF;*/
+}
+
+.vieworder_row a {
+	text-decoration: none;
+	color: #000000;
+}
+
+/* item */
+.vieworder_row.item {
+	float: left;
+	height: 28px;
+}
+
+
+.search-button {
+	font-family: "微软雅黑";
+	float: left;
+}
+
+.table_border {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	float: left;
+}
+
+/** 表示div长度的   如果用DIV方式排版的话用得着   2013-04-13从new-style.css增加*******************************************************************************************************/
+.vieworder_box_30_40 {
+	float: left;
+	width: 30px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_40_40 {
+	float: left;
+	width: 40px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_50_40 {
+	float: left;
+	width: 50px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_60_40 {
+	float: left;
+	width: 60px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_80_40 {
+	float: left;
+	width: 80px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_200_40 {
+	float: left;
+	width: 200px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_110_40 {
+	float: left;
+	width: 110px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_120_40 {
+	float: left;
+	width: 120px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_150_40 {
+	float: left;
+	width: 150px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_250_40 {
+	float: left;
+	width: 250px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_300_40 {
+	float: left;
+	width: 300px;
+	line-height: 20px;
+	min-height: 20px;
+}
+
+.vieworder_box_400_40 {
+	float: left;
+	width: 400px;
+	line-height: 20px;
+	min-height: 20px;
+}
+/** 表示div长度的   END******************************************************************************************************/

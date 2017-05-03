@@ -1,0 +1,55 @@
+
+
+ul {
+	list-style-type: none;
+}
+
+.daohang {
+	width: 960px;
+	height: 43px;
+	float: left;
+	margin: 0px 0px 10px 0px;
+}
+
+#nav,#nav ul,#nav ul li,#nav ul li a:hover,#nav .subnav,#nav .subnav p,#nav .subnav p span,#nav .subnav .arrow
+	{
+	background: url(../images/nav_bg.png) no-repeat;
+}
+
+#nav {
+	position: relative;
+	width: 960px;
+	background-position: 0 -36px;
+	margin: 10px auto;
+}
+
+#nav ul {
+	height: 36px;
+	line-height: 36px;
+	margin-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+	background-position: right -72px;
+}
+
+#nav ul li {
+	float: left;
+	width: 106px;
+	margin-left: -2px;
+	background-position: 0 -108px;
+}
+
+#nav ul li a {
+	font-size: 14px;
+	color: #fff;
+	width: 102px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 2px 0 4px;
+}
+
+#nav ul li a:hover {
+	font-weight: 700;
+	background-position: -3px -144px;
+}

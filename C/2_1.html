@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公告-我要悟空</title>
+<link href="/J2SHOP/template/j2cms_com/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/J2SHOP/template/j2cms_com/css/Search.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="/J2SHOP/template/j2cms_com/js/setHeight.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/J2SHOP/template/wukong/js/cookie_function.js"></script>
+<link rel="stylesheet" type="text/css" href="/J2SHOP/template/wukong/style.css" media="screen" />
+
+
+<script language="javascript">
+function pageQuery(page) {
+	 
+location.href = "/J2SHOP/C/2_"+page+".html";
+
+}
+</script>
+</head>
+<body>
+	<div class="body_other">
+
+<div id="daohang">
+	<div><a href="/J2SHOP/index.html"><img src="/J2SHOP/template/wukong/images/index_2.png" onmouseover="this.src='/J2SHOP/template/wukong/images/index_1.png'" onmouseout="this.src='/J2SHOP/template/wukong/images/index_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="/J2SHOP/shop/index.html"><img src="/J2SHOP/template/wukong/images/wukongwaimai_2.png" onmouseover="this.src='/J2SHOP/template/wukong/images/wukongwaimai_1.png'" onmouseout="this.src='/J2SHOP/template/wukong/images/wukongwaimai_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="/J2SHOP/shop/1002/index.html"><img src="/J2SHOP/template/wukong/images/drink_recommend_2.png" onmouseover="this.src='/J2SHOP/template/wukong/images/drink_recommend_1.png'" onmouseout="this.src='/J2SHOP/template/wukong/images/drink_recommend_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="/J2SHOP/shop/1003/index.html"><img src="/J2SHOP/template/wukong/images/market_recommend_2.png" onmouseover="this.src='/J2SHOP/template/wukong/images/market_recommend_1.png'" onmouseout="this.src='/J2SHOP/template/wukong/images/market_recommend_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href=""><img src="/J2SHOP/template/wukong/images/business_circle_2.png" onmouseover="this.src='/J2SHOP/template/wukong/images/business_circle_1.png'" onmouseout="this.src='/J2SHOP/template/wukong/images/business_circle_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="/J2SHOP/3.html"><img src="/J2SHOP/template/wukong/images/latest_active_2.png" onmouseover="this.src='/J2SHOP/template/wukong/images/latest_active_1.png'" onmouseout="this.src='/J2SHOP/template/wukong/images/latest_active_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+</div>
+<!-- Header Begin-->
+<div class="header">
+    <!-- Logo Begin-->
+    <a href="/J2SHOP/index.html"><div class="logo"></div></a>
+    <!-- Logo End-->
+	<!-- Header Right Begin-->
+	<div class="headerR">
+		<div class="tele_login_register">
+		<img src="/J2SHOP/template/wukong/images/tele.png" class="small_icon" /> <span>客服热线：18818232418</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;<span id="top_login_state"></span>
+		</div>
+		<!-- siteshares Button BEGIN -->
+		<div class="shares">
+			<div class="bshare-custom">
+				<div class="bsPromo bsPromo2"></div>
+				<a title="分享到QQ空间" class="bshare-qzone"></a>
+				<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+				<a title="分享到人人网" class="bshare-renren"></a>
+				<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+				<a title="分享到网易微博" class="bshare-neteasemb"></a>
+				<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+			</div>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		</div>
+		<!-- siteshares Button END -->
+    </div>
+	<!-- Header Right End -->
+</div>
+<!-- Header end -->
+<script>
+function logout(){
+	deleteCookie("USER_NAME");
+	//alert("注销成功");
+	document.location.href = "/J2SHOP/logout";
+}
+
+if(getCookie("USER_NAME")==""){
+	document.getElementById("top_login_state").innerHTML="<a href='/J2SHOP/login'><span>登录</a> | <a href='/J2SHOP/register'>注册</a></span>&nbsp;";
+}else{
+	document.getElementById("top_login_state").innerHTML="<span><a href='/J2SHOP/login'>" + getCookie("USER_NAME") + "</a>,&nbsp;欢迎回来！&nbsp;<span onclick='logout();' class='mouse_change'><a>注销</a></span></span>&nbsp;";
+}
+</script>
+		<div class="artical_container">
+		
+			<div id="ShowNews">
+				<div id="Pos">
+					&nbsp;<a href="/J2SHOP">首页</a><img src="/J2SHOP/template/j2cms_com/images/pos.gif" border=0 />  <a href="/J2SHOP/2.html">公告</a>  &nbsp; 
+				</div>
+				<div id="News">
+					<ul>
+						<li><img src="/J2SHOP/template/j2cms_com/images/arrow_01.gif" /> <a href="/J2SHOP/Article/13.html" title="公告1" target="_blank">公告1</a> <span>[2013-05-13]</span></li> 
+					</ul>
+				</div>
+
+				<table width="590" align="center">
+					<tr>
+						<td align="center">页次&nbsp;<font class="red_normal">1/1</font> &nbsp;&nbsp;每页&nbsp;<font class="red_normal">10</font>&nbsp;条&nbsp;&nbsp;共&nbsp; <font class="red_normal">1</font>&nbsp;条
+						</td>
+						<td align="center">  最前页&nbsp;上一页    下一页&nbsp;最后页  </td>
+					</tr>
+				</table>
+
+			</div>
+			<!--ShowNews end-->
+
+		</div>
+
+<!-- footer begin -->
+<div class="footer">
+	<div class="footer_left">
+		<div class="footer_title"><img src="/J2SHOP/template/wukong/images/footer_servicetime.png" class="small_icon" />&nbsp;服务时间</div>
+		<div>线下配送:09:30-21:30</div>
+		<div>客服专线:09:30-21:30</div>
+		<div>在线下单:00:00-24:00</div>
+	</div>
+	<div class="footer_center">
+		<div class="footer_title"><img src="/J2SHOP/template/wukong/images/footer_help.png" class="small_icon" />&nbsp;帮助中心</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/14.html">服务内容</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/14.html">服务介绍</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/15.html">常用规则</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/16.html">常见问题</a></div>
+	</div>
+	<div class="footer_right">
+		<div class="footer_title"><img src="/J2SHOP/template/wukong/images/footer_about.png" class="small_icon" />&nbsp;关于我们</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/4.html">关于我们</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/12.html">联系我们</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/4.html">商家加盟</a></div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/J2SHOP/login">商家登录</a></div>
+	</div>
+</div>
+<div class="beian">我要悟空&nbsp;&nbsp;&copy;2009-2013 我要悟空 &nbsp;&nbsp;
+  邮箱:12056836@qq.com&nbsp;
+  鄂ICP备08102130号</div>
+<!-- footer end -->		<script type="text/javascript" src="/J2SHOP/template/wukong/js/aboutus.js"></script>
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${(C.fullName)!"J2CMS"}</title>
+<meta name="description" content='${C.description!""}'/>
+<meta name="keywords" content='${C.keywords!""}'/>
+<link href="${C.ctp}/template/j2cms_com/css/base.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms_com/css/common.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms_com/css/index.css" rel="stylesheet" type="text/css" />
+<script src="${C.ctp}/template/j2cms_com/js/flashImg.js" language="javascript" type="text/javascript"></script>
+</head>
+       
+<body>
+<div id="container">
+	<#include "/head.html" parse=false encoding="UTF-8">
+<div id="main">
+<div id="main-center">
+         <div id="imageNews">
+             <div class="flash">
+            <script type="text/javascript">
+           		CreateFlash("finance_photo", "${C.ctp}/template/j2cms_com/flash/imageNews.swf", 349, 250);
+                var xml="";
+                <#if flashs??>
+                <#list flashs as flash>
+                	xml=xml+"<p u='${flash.imageURL}' a='${flash.linkURL}' n='${flash.name}'/>";
+                </#list>
+                </#if>
+                function getXml() {
+                	return "<?xml version='1.0' encoding='utf-8'?><root>"+xml+"</root>";
+                	}
+            </script>
+            </div>	  
+		</div> 
+        <div id="latestNews">
+           <div id="latestNewsBanner">&nbsp;最新动态</div>
+           <#if latestArticles?? >
+		   <#list latestArticles as a>
+	           <li>［${a.channel.name!""}］<a href="Article/${a.id?c}.html" 
+	           title="${a.name}" target="_blank">${a.name!""}</a>
+	           <span>[${a.releaseDate!""}]</span></li>  
+           </#list> 
+           </#if>
+           
+ 		</div> 
+        <!--informpart begin -->
+        <div id="systemIntroduce">
+		       <div class="rigth_title">&nbsp;系统简介</div>
+		       		<div id="systemIntroduce-content">
+		      			 ${C.introduce!""}
+					</div>
+        </div> <!--informpart end -->
+        
+</div><!--main-center end-->
+
+
+<div id="main-left">
+
+
+<#if channelArticleMaps??>
+<#list channelArticleMaps as channelArticleMap>
+  <div class="channel">
+     <#list channelArticleMap?keys as channelName > 
+     <div class="channelName">&nbsp;&nbsp;${channelName}</div>
+     <div>
+        <ul>
+           <#assign articles=channelArticleMap[channelName] > 
+           <#if articles??>
+       	   <#list articles as articleBean>
+	           <li><a href="Article/${articleBean.id?c}.html" 
+	           title='${articleBean.name!""}' target="_blank">${articleBean.name!""}</a>
+	           <span>[${articleBean.releaseDate!""}]</span></li> 
+           </#list> 
+           </#if>
+    	</ul>
+    </div>
+    </#list>
+ </div>
+</#list> 
+</#if>
+
+
+</div><!--main_left end-->
+
+
+
+<div id="ITservice" >
+	<div class="rigth_title">&nbsp;服务与支持</div>
+	<div id ="ITservice-content">
+		<img src="${C.ctp}/template/j2cms_com/images/qq.gif" align="middle" alt="QQ" />&nbsp;<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=${C.QQ}&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="${C.ctp}/template/j2cms_com/images/qq_online.gif" /></a>&nbsp;
+		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=304748568&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="http://wpa.qq.com/pa?p=2:304748568:41" /></a>
+		<br/><br/>
+		<img src="${C.ctp}/template/j2cms_com/images/tel.gif" align="middle" alt="电话"/><b>${C.mobile!""}</b><br/>
+	</div>
+</div>
+
+
+<div id="main-center">   
+<div class="rigth_title">&nbsp;典型案例</div> 
+        <div id="systemAd">
+        	<#include "picad.html" encoding="UTF-8">
+        </div>
+</div>
+
+
+<div id="copyright">
+    <#include "/foot.html" parse=false encoding="UTF-8">
+</div>
+</div><!--main end -->
+
+
+
+</div><!--container end-->
+
+</body>
+</html>

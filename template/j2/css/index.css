@@ -1,0 +1,21 @@
+#download{
+	line-height: 22px;
+	width:273px;
+	height:242px;
+	font-size:12px;
+	padding-top:0px;
+	background:url(../images/download_bg.png) no-repeat;
+}
+#down {
+	height:180px;
+	padding: 47px 19px 19px;
+}
+#down .download_btn {
+	background: url(../images/download_btn.png) left top;
+	width:232px;
+	height:59px;
+	display:block;
+}
+#down .download_btn:hover {
+	background: url(../images/download_btn.png) left bottom;
+}

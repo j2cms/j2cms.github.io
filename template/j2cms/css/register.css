@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+.registerInput{
+	height:30px; width:200px 
+}
+.inputErrorStyle{
+	height:30px; width:200px 
+}
+.errorStyle{
+	color:#B10000;  font-size: 12px;
+}

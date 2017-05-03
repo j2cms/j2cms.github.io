@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 链接颜色 
+A:link {
+	COLOR: #457FFC; TEXT-DECORATION: none; font-size: 9pt
+}
+A:visited {
+	COLOR: #457FFC; TEXT-DECORATION: none; font-size: 9pt
+}
+A:active {
+	COLOR: #FF0000; TEXT-DECORATION: none; font-size: 9pt
+}
+A:hover {
+	COLOR: #6600FF; TEXT-DECORATION: underline; font-size: 9pt
+}
+*/
+
+.news a:link{ COLOR:#555555; TEXT-DECORATION: none; font-size: 12px}
+.news a:visited{COLOR:#336699; TEXT-DECORATION: none; font-size: 12px}
+.news a:hover{COLOR: #ff6600; TEXT-DECORATION: underline; font-size:12px}
+.news a:active{COLOR:#ff0000; TEXT-DECORATION: none; font-size: 12px}
+
+
+
+
+/*按钮属性*/
+.button {
+	BORDER-RIGHT: #457FFC 1px ridge;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #ffffff 1px ridge;
+	PADDING-LEFT: 1px;
+	FONT-SIZE: 9pt;
+	PADDING-BOTTOM: 1px;
+	BORDER-LEFT: #ffffff 1px ridge;
+	COLOR: #000000;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #457FFC 1px ridge;
+	
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: #f1f1f1;
+	cursor: hand;
+}
+
+/*文字属性*/
+.chinese
+{
+    
+	color:#333333;
+}
+
+/*标题属性*/
+.title {
+	
+
+	}
+	
+/*提示信息字体属性*/
+.info1
+{ 
+	color:#FA605E;
+}
+
+
+
+
+#intPageSize{
+	width:25px;
+}
+#Level{
+	width:30px;
+}
+#articleID{
+	width:80px;
+}
+#relatedIds{
+	width:360px;
+}
+#summary{
+	width:797px;
+}
+#link{
+	width:797px;
+}
+#Content {
+	margin:5px 0 0 0; 
+	width:778px;
+	border:1px solid #959595;
+	background-color:#FFFFFF; 
+	font-family:"Arial,Helvetica,sans-serif";
+	
+}
+
+#Content #NewsContent{ margin:20px; background-color:#FFFFFF; color:#333333; padding:5px 20px 30px 20px;text-align:left; line-height:20px;};
+
+.codeImg{
+	cursor:pointer;
+}
+

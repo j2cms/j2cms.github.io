@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="${C.ctp}/template/j2cms_com/css/head.css" rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2cms_com/css/cddh.css" rel="stylesheet" type="text/css" />
+<script src="${C.ctp}/template/j2cms_com/js/common.js" type="text/javascript"></script>
+  <div id="head">    
+    	<div class="banner"></div>
+  		<div id="top">
+          <ul>
+          <li><a href="${C.ctp}">首页</a></li>
+          <#if channelsDisplay??>
+          <#list channelsDisplay as channel>
+          <#if channel.type == "link">
+          	<li><a href="${channel.link}" target="_blank">${channel.name}</a></li>
+          <#else>
+			<li><a href="${C.ctp}/${channel.id}.html">${channel.name}</a></li>
+		  </#if>
+          </#list>
+          </#if>
+          </ul>    
+        </div>
+</div><!--head end-->	
+

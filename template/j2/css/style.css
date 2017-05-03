@@ -1,0 +1,116 @@
+/*
+Version: 1.0
+Author: 清风银时
+Description: 银时出品，必属精品
+*/
+
+/**************************************************************/
+/*SAMPLE-B*/
+#slide_b { margin-right:5px;position:relative;width:680px; height:240px; overflow:hidden; border:1px solid #ccc; float:left }
+#slide_b img{width:680px; height:240px}
+#slide_b .ico_b{position:absolute; right:8px;bottom:6px}
+#slide_b .ico_b li{background:#fff;float:left;display:block; width:15px; height:15px; line-height:15px;border:1px solid #cecece;font-family:Arial, Helvetica, sans-serif;text-align:center;margin:2px; padding: 1px;cursor:pointer}
+#slide_b .ico_b li.high_b{background:#a40000;color:#fff;font-weight:bolder}
+/**************************************************************/
+
+/* global css */
+body{ margin:0 auto; background-color:#e6eae4; color:#333; font-size:12px; font-family:'宋体',Arial,Verdana,Sans-Serif;}
+div,form,ul,ol,li,span,p{margin:0 auto; padding:0; border:0;}
+img,a img{margin:0; padding:0; border:none;}
+ul,ol,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{ margin:0 auto;}
+h1 {font-size:28px;}
+h2 {font-size:22px;}
+h3 {font-size:16px;}
+h4 {font-size:12px;}
+h5 {font-size:14px;}
+h6 {font-size:14px;}
+
+
+.decro_font{color:#ffae00;font-weight:bold;}
+
+.clear{width:960px; height:8px;float:left;}
+.border_image{border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;}
+.index_date{font-size:12px;color:#f46f51;float:right;}
+.index_title_right{font-size:12px;color:#f46f51;float:right;padding-right:8px;padding-top:8px;}
+
+.top{width:100%;height:35px;background:url(../images/topBg.png) no-repeat 0 0;border-bottom:1px solid #ddd;}
+.top_container{width:960px;color:#fff;color:#555;}
+.top_right{width:600px;text-align:right;float:right;margin-top:8px;}
+
+.header{width:960px;}
+.header_logo{width:400px;height:86px;float:left;background:url(../images/logo.png) no-repeat 0 0;margin-left:20px;margin-top:20px;}
+.header_right{width:500px;height:20px;margin-top:25px;float:left;margin-left:10px;font-size:12px;text-align:right;}
+.header_daohang{width:960px; height:30px;float:left;}
+.menu_title{margin-top:10px;margin-left:20px;font-size:14px;color:#fff;float:left;}
+.header_QQ{margin-bottom:15px;font-size:16px;color:#bd1515;font-weight:bold;}
+
+
+.footer{width:960px;float:left;background-color:#fff;}
+.footer_body{width:900px;float:left;margin-left:30px;margin-top:10px;}
+.beian{width:600px;float:left;height:20px;margin-top:5px;font-size:12px;}
+.copyright{width:100px;float:right;height:30px;font-size:12px;margin-top:5px;margin-left:200px;}
+.footer_logo{float:left;}
+.footer_line{float:left;margin-top:10px;}
+.footer_link{float:right;margin-top:30px;margin-bottom:10px;}
+
+.all{margin:0 auto;width:960px;}
+.container{width:960px;float:left;}
+.slider_show{width:680px;height:240px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;}
+
+.index_container_font{font-size:12px;color:#666;padding-left:10px;}
+
+.index_announce{width:270px;height:194px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;margin-left:8px;margin-bottom:10px;}
+.index_announce_titleBg, .index_versionAndTeach_titleBg{width:268px;height:30px;background-color:#f7f7f7;border-bottom:1px solid #e6e6e6;}
+.index_announce_title1, .index_introduce_title1, .index_versionAndTeach_title1, .index_example_title1{width:77px; height:28px;background:url(../images/title_imageBg.png) no-repeat 0 0;padding:3px 1px 0px 8px;font-size:14px;color:#fff;float:left;margin-top:4px;margin-left:3px;}
+.index_announce_title2, .index_introduce_title2, .index_versionAndTeach_title2, .index_example_title2{height:28px;padding:3px 1px 0px 0px;font-size:14px;color:#3386cc;float:left;margin-top:4px;}
+.index_announce_body , .index_versionAndTeach_body{width:250px;padding-top:20px;overflow:hidden;line-height:25px;padding-left:10px;float:left;}
+
+.container a{
+	text-decoration:none;
+	color:#666;
+}
+.container a:visited{
+	text-decoration:none;
+	color:#666;
+}
+.container a:hover{
+	text-decoration:underline;
+}
+
+.index_introduce{width:680px;height:400px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;}
+.index_introduce_titleBg, .index_example_titleBg{width:678px;height:30px;background-color:#f7f7f7;border-bottom:1px solid #e6e6e6;float:left;}
+.index_introduce_font{padding-top:5px;line-height:25px;color:#777;text-align:left;}
+.index_introduce_list{padding-left:40px;padding-top:35px;width:115px;height:85px;float:left;text-align:center;margin-bottom:40px;}
+
+.index_other{width:335px;height:194px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;margin-bottom:10px;margin-right:8px;}
+.index_other_titleBg{width:335px;height:30px;background-color:#f7f7f7;border-bottom:1px solid #e6e6e6;}
+.index_other_title1{width:77px; height:28px;background:url(../images/title_imageBg.png) no-repeat 0 0;padding:3px 1px 0px 8px;font-size:14px;color:#fff;float:left;margin-top:4px;margin-left:3px;}
+.index_other_title2{height:28px;padding:3px 1px 0px 0px;font-size:14px;color:#3386cc;float:left;margin-top:4px;}
+.index_other_body{width:310px;padding-top:20px;overflow:hidden;line-height:25px;padding-left:10px;float:left;}
+
+
+.index_article{width:270px;height:194px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;margin-bottom:10px;}
+.index_article_titleBg, .index_versionAndTeach_titleBg{width:268px;height:30px;background-color:#f7f7f7;border-bottom:1px solid #e6e6e6;}
+.index_article_title1, .index_introduce_title1, .index_versionAndTeach_title1, .index_example_title1{width:77px; height:28px;background:url(../images/title_imageBg.png) no-repeat 0 0;padding:3px 1px 0px 8px;font-size:14px;color:#fff;float:left;margin-top:4px;margin-left:3px;}
+.index_article_title2, .index_introduce_title2, .index_versionAndTeach_title2, .index_example_title2{height:28px;padding:3px 1px 0px 0px;font-size:14px;color:#3386cc;float:left;margin-top:4px;}
+.index_article_body , .index_versionAndTeach_body{width:250px;padding-top:20px;overflow:hidden;line-height:25px;padding-left:10px;float:left;}
+
+
+.index_download{width:270px;height:240px;background:url(../images/index_downloadBg.png) no-repeat 0 0;float:left;margin-left:8px;}
+.index_download_title{width:270px;text-align:center;line-height:30px;font-size:16px;font-weight:bold;margin-top:25px;margin-bottom:5px;color:#1bb72e;}
+.index_download_body{line-height:25px;margin-left:40px;margin-top:5px;}
+
+.index_example{width:960px;height:210px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;}
+.index_example_block{padding-left:5px;padding-top:15px;width:120px;height:180px;float:left; text-align:center;}
+.index_example_font{padding-top:5px;line-height:25px;color:#777;}
+.index_example_titleBg{width:960px;height:30px;background-color:#f7f7f7;border-bottom:1px solid #e6e6e6;float:left;}
+
+.subPage_sidebar_search{width:200px;height:100px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;}
+
+
+.subPage_sidebar_contactUs{width:200px;height:240px;border-bottom:1px solid #e3e3e3;border-right:1px solid #e3e3e3;float:left;background-color:#fff;}
+.subPage_sidebar_contactUs_titleBg, .subPage_sidebar_search_titleBg{width:198px;height:30px;background-color:#f6f6f6;border-bottom:1px solid #e6e6e6;}
+.subPage_sidebar_contactUs_title, .subPage_sidebar_search_title{padding-left:15px;padding-top:10px;font-size:16px;color:#fff;}
+.subPage_sidebar_body{padding-left:20px;padding-top:20px;line-height:25px;color:#777;}
+.subPage_sidebar_body ul{font-weight:bold;}

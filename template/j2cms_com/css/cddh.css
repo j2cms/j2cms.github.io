@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+/*菜单导航*/
+/*------------------------------------------------top-------------------*/
+
+#top{
+	width:1000px;
+	height:25px;
+
+}
+
+#top ul{
+	float:left;
+	height:25px;
+	width:1000px;
+	background:url(../images/0002.jpg) repeat-x ;
+}
+#top ul li{
+	float:left;
+	font-size:0;
+	line-height:0;
+	LIST-STYLE-TYPE: none;
+}
+#top ul li a{
+	display:block;
+	padding:1px 25px;
+	font:bold 12px/23px Arial, Helvetica, sans-serif;
+	/*
+	color:#6C6C6C;
+	*/
+	color:#fff;
+}
+#top ul li a:hover{
+	color:#fff;
+	background-color:#236fab;
+	font-size:15px;
+}
+#top ul li a.hover{
+	display:block;
+	font:bold  Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+	cursor:text;
+}
+/*------------------------------------------------top--------------------*/
+
+
