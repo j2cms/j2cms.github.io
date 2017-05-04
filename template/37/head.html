@@ -1,0 +1,89 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="${C.ctp}/template/j2/css/style.css"  rel="stylesheet" type="text/css" />
+<link href="${C.ctp}/template/j2/css/daohang.css"  rel="stylesheet" type="text/css" />
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="top">
+	<div class="top_container">
+		<div class="top_right">
+			<a href="${C.ctp}/index.html" style="text-decoration:none">
+                       <img src="${C.ctp}/template/j2/images/home.png" style="vertical-align:middle;" /> 官方首页</a> | 
+<#--
+			<img src="${C.ctp}/template/j2/images/top2.png" style="vertical-align:middle;"/> 捷兔产品 | 
+			<img src="${C.ctp}/template/j2/images/top3.png" style="vertical-align:middle;"/> 服务支持 | 
+			<img src="${C.ctp}/template/j2/images/top4.png" style="vertical-align:middle;"/> 技术论坛 | 
+-->
+			<a href="${C.ctp}/10.html" style="text-decoration:none"><img src="${C.ctp}/template/j2/images/course.png" style="vertical-align:middle;" style="text-decoration:none"/> 教   程</a>
+
+<img src="${C.ctp}/template/j2/images/login_icon.png" style="vertical-align:middle;" style="text-decoration:none" height="24" width="24"/><a href="${C.ctp}/login" style="text-decoration:none"> 登录</a>/<a href="${C.ctp}/register" style="text-decoration:none">注册</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="header">
+	<div class="header_top">
+		<div class="header_logo">
+		</div>
+		<div class="header_right">
+			<div class="header_QQ">
+				<img src="${C.ctp}/template/j2/images/QQ.png" width="25" height="25" alt="QQ" />&nbsp;
+				<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=75214390&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="http://wpa.qq.com/pa?p=2:75214390:41" /></a>&nbsp;
+				
+				<img src="${C.ctp}/template/j2/images/tele.png" width="209" height="28" alt="tele" />
+			</div>
+			<div>
+
+
+
+<!-- siteshares Button BEGIN -->
+		<div class="shares">
+			<div class="bshare-custom">
+				<div class="bsPromo bsPromo2"></div>
+				<a title="分享到QQ空间" class="bshare-qzone"></a>
+                                <a title="分享到人人网" class="bshare-renren"></a>
+				<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+				<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+				<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+			</div>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		</div>
+		<!-- siteshares Button END -->
+
+
+
+<#--<a href ="http://weibo.com/yeelor" target="_blank"><img src="http://img.t.sinajs.cn/t4/style/images/staticlogo/download/Buttons/32x32/Weibo_Buttons_32x32_yellow_back.png"/></a>论坛&nbsp;|&nbsp;站长工具&nbsp;|&nbsp;博客&nbsp;|&nbsp;关于我们&nbsp;|&nbsp;联系我们-->
+
+
+
+</div>
+		</div>
+	</div>
+    
+    
+	<div class="daohang">
+    
+	  	<div id="nav">
+			<ul>
+				<li><a href="${C.ctp}/">首页</a></li>
+				<#if channelsDisplay??>
+				<#list channelsDisplay as channel>
+				<#if channel.type == "link">
+				<li><a href="${channel.link}" target="_blank">${channel.name}</a></li> 
+				<#else> 
+				<#if channel.path == "/">
+				<li><a href="${C.ctp}/${channel.id}.html">${channel.name}</a></li> 
+				<#else>
+				<li><a href="${C.ctp}${channel.path}index.html">${channel.name}</a></li>
+				</#if> 
+				</#if> 
+				</#list> 
+				</#if>
+			</ul>
+		</div>
+	
+	</div>
+    
+    
+</div>

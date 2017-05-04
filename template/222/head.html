@@ -1,0 +1,51 @@
+<div id="daohang">
+	<div><a href="${C.ctp}/index.html"><img src="${C.ctp}/template/wukong/images/index_2.png" onmouseover="this.src='${C.ctp}/template/wukong/images/index_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/index_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="${C.ctp}/shop/index.html"><img src="${C.ctp}/template/wukong/images/wukongwaimai_2.png" onmouseover="this.src='${C.ctp}/template/wukong/images/wukongwaimai_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/wukongwaimai_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="${C.ctp}/shop/1002/index.html"><img src="${C.ctp}/template/wukong/images/drink_recommend_2.png" onmouseover="this.src='${C.ctp}/template/wukong/images/drink_recommend_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/drink_recommend_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="${C.ctp}/shop/1003/index.html"><img src="${C.ctp}/template/wukong/images/market_recommend_2.png" onmouseover="this.src='${C.ctp}/template/wukong/images/market_recommend_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/market_recommend_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="${C.ctp}/circle/index.html"><img src="${C.ctp}/template/wukong/images/business_circle_2.png" onmouseover="this.src='${C.ctp}/template/wukong/images/business_circle_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/business_circle_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+	<div><a href="${C.ctp}/3.html"><img src="${C.ctp}/template/wukong/images/latest_active_2.png" onmouseover="this.src='${C.ctp}/template/wukong/images/latest_active_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/latest_active_2.png'" class="mouse_change" style="margin-bottom:7px;"></a></div>
+</div>
+<!-- Header Begin-->
+<div class="header">
+    <!-- Logo Begin-->
+    <a href="${C.ctp}/index.html"><div class="logo"></div></a>
+    <!-- Logo End-->
+	<!-- Header Right Begin-->
+	<div class="headerR">
+		<div class="tele_login_register">
+		<img src="${C.ctp}/template/wukong/images/tele.png" class="small_icon" /> <span>客服热线：${C.tel}</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;<span id="top_login_state"></span>
+		</div>
+		<!-- siteshares Button BEGIN -->
+		<div class="shares">
+			<div class="bshare-custom">
+				<div class="bsPromo bsPromo2"></div>
+				<a title="分享到QQ空间" class="bshare-qzone"></a>
+				<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+				<a title="分享到人人网" class="bshare-renren"></a>
+				<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+				<a title="分享到网易微博" class="bshare-neteasemb"></a>
+				<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+			</div>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		</div>
+		<!-- siteshares Button END -->
+    </div>
+	<!-- Header Right End -->
+</div>
+<!-- Header end -->
+<script>
+function logout(){
+	deleteCookie("USER_NAME");
+	//alert("注销成功");
+	document.location.href = "${C.ctp}/logout";
+}
+
+if(getCookie("USER_NAME")==""){
+	document.getElementById("top_login_state").innerHTML="<a href='${C.ctp}/login'><span>登录</a> | <a href='${C.ctp}/register'>注册</a></span>&nbsp;";
+}else{
+	document.getElementById("top_login_state").innerHTML="<span><a href='${C.ctp}/login'>" + getCookie("USER_NAME") + "</a>,&nbsp;欢迎回来！&nbsp;<span onclick='logout();' class='mouse_change'><a>注销</a></span></span>&nbsp;";
+}
+</script>

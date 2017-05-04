@@ -1,0 +1,21 @@
+<div class="other_new_activity_box">
+		<div class="other_new_activity_title">最新活动</div>
+		<marquee scrollAmount=1 direction="up" >
+			<div class="other_new_activity">
+				<ul>
+                                  
+                                  <#if activeArticles ??>
+				 <#list activeArticles as a>
+					<li><img src="${C.ctp}/template/wukong/images/laba.png" class="small_icon" /> <a href="${C.ctp}/Article/${a.id?c}.html" title="${a.name}" target="_blank">${a.name!""}</a>
+					 <span>[${a.releaseDate!""}]</span> </li>
+
+				  </#list>   </#if>
+
+			
+				</ul>
+			</div>
+		</marquee>
+		<div class="other_new_activity_clickmeformore">
+			<a href="${C.ctp}/3.html"><img src="${C.ctp}/template/wukong/images/index_clickmeformore_1.png" onmouseover="this.src='${C.ctp}/template/wukong/images/index_clickmeformore_2.png';this.style.cursor='hand';" onmouseout="this.src='${C.ctp}/template/wukong/images/index_clickmeformore_1.png'" class="mouse_change" /></a>
+		</div>
+	</div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>${C.name}</title>
+<meta name="description" content="${C.description}"/>
+<meta name="keywords" content="${C.keywords}"/>
+</head>
+<body>
+
+	<#include "/head.html" parse=false encoding="UTF-8">
+
+
+
+	<div class="comom">
+
+		<#include "/left.html" parse=false encoding="UTF-8">
+
+		<div class="comom_right">
+			<!--公司简介 -->
+			<div class="shop">
+				<h3>系统简介</h3>
+			</div>
+			<div class="pdv_border" style="border: 0px; padding: 10;">
+				<div style="padding-right: 0px; padding-left: 0px; padding-bottom: 0px; padding-top: 0px">
+				<img alt="" border="0" src="template/T1/images/dhu.jpg" width="260px" style="padding-right: 30px; float: left" />
+				
+					<div style="padding-right: 0px; padding-left: 0px; padding-bottom: 0px; font: 12px/20px simsun; color: #393939; padding-top: 0px">
+						${C.introduce}
+					</div>
+				</div>
+			</div>
+
+			<!--公司简介 -->
+
+			<div class="shop">
+				<h3>案例展示</h3>
+			</div>
+			<div class="listbox">
+                              <div class="beforeUL"></div>
+				<ul class="e8">
+				 <#list caseFlashs as flash>
+			        <li><a href="${flash.linkURL}" target="_blank" class="pic">
+			        <img src="${flash.imageURL}" alt="${flash.name}"/></a> 
+			        <a href="${flash.linkURL}" class="title">${flash.name}</a>
+					</li>
+			      </#list> 
+				
+				</ul>
+			</div>
+		</div>
+		<div class="clear-float"></div>
+	</div>
+	<div class="clear-float"></div>
+
+	<#include "/foot.html" parse=false encoding="UTF-8">
+
+</body>
+</html>

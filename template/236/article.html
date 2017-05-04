@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="${C.ctp}/template/wukong/style.css" media="screen" />
+<link rel="stylesheet" type="css" href="${C.ctp}/template/shopyou/css/style.css" />
+<link rel="stylesheet" type="text/css" href="${C.ctp}/template/j2/css/register.css" media="screen" />
+<title>${entity.name!""}-${(C.name)!"J2CMS"}</title>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/cookie_function.js"></script>
+</head>
+<body>
+<div class="body_other">
+
+<#include "/head.html" parse=false encoding="UTF-8">
+<!-- top -->
+
+
+<!-- hot_shop begin -->
+
+<!-- hot_shop end -->
+<!-- artical begin-->
+<div class="artical_container">
+	<div class="artical">
+	<div class="artical_title">	${(entity.name)!""}</div>
+	${(entity.content)!""}
+	</div>
+
+	
+
+</div>
+ 
+<!-- artical end -->
+
+
+<!-- footer -->
+
+<#include "/foot.html" parse=false encoding="UTF-8">
+
+</div>
+
+</body>
+
+</html>

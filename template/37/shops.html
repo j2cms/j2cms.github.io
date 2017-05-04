@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="${C.ctp}/template/wukong/style.css" media="screen" />
+<title>热门商家-${C.name}</title>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/cookie_function.js"></script>
+<script language="javascript">
+	function pageQuery(page) {
+		location.href = "${C.ctp}/shop/C/"+page+".html";
+	}
+</script>
+</head>
+<body>
+	<div class="body_other">
+
+		<#include "/51_head.html" parse=false encoding="UTF-8">
+
+		<!-- top -->
+
+
+
+		<!-- hot_shop begin -->
+		<div class="hot_shop">
+			<div id="demo_top">
+				<div id="indemo_top">
+					<div id="demo1_top">
+						<#list recommondShops as shop> 
+						<a href="${C.ctp}/shop/${shop.id?c}/index.html"><img src="${C.ctp}${shop.logoUrl}" style="margin-left: 15px;" width="101px" height="101px"/></a> 
+						
+						 </#list>
+					</div>
+					<div id="demo2_top"></div>
+				</div>
+			</div>
+		</div>
+		<!-- hot_shop end -->
+		<div class="all_shop_container">
+			<!-- all_shop_list begin-->
+			<div class="all_shop_list">
+				<#list entityListVo.entityBeanList as shop>
+				<div class="all_shop_logo_and_title">
+					<div>
+						<a href="${C.ctp}/shop/${shop.id?c}/index.html" target="_blank"><img src="${C.ctp}${shop.logoUrl}" class="all_shop_logo" width="101px" height="101px" /></a>
+					</div>
+					<div class="all_shop_logo_title">${shop.name}</div>
+				</div>
+				</#list>
+				
+				<div class="last_and_next">
+					<table width="590" align="center">
+						<tr>
+							<td align="center">页次&nbsp;<font class="red_normal">${entityListVo.currentPage}/${(entityListVo.totalPage)?c}</font> &nbsp;&nbsp;每页&nbsp;<font class="red_normal">${entityListVo.maxResult}</font>&nbsp;条&nbsp;&nbsp;共&nbsp; <font class="red_normal">${(entityListVo.totalRecord)?c}</font>&nbsp;条
+							</td>
+							<td align="center"><#if (entityListVo.currentPage>1)> <a href='#' onClick='pageQuery(1)'>最前页</a> <a href='#' onClick="pageQuery(${entityListVo.currentPage-1})">上一页</a> </#if> <#if entityListVo.currentPage==1> 最前页&nbsp;上一页 </#if> <#if entityListVo.currentPage<entityListVo.totalPage> <a href='#' onClick='pageQuery(${entityListVo.currentPage+1})'>下一页</a> <a href='#' onClick="pageQuery(${entityListVo.totalPage})">最后页</a> </#if> <#if
+								entityListVo.currentPage==entityListVo.totalPage> 下一页&nbsp;最后页 </#if> </td>
+						</tr>
+					</table>
+					<!--  
+					<img src="${C.ctp}/template/wukong/images/last_1.png" onmouseover="this.src='${C.ctp}/template/wukong/images/last_2.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/last_1.png'" class="mouse_change" /> &nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="${C.ctp}/template/wukong/images/next_1.png" onmouseover="this.src='${C.ctp}/template/wukong/images/next_2.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/next_1.png'" class="mouse_change" />
+					-->
+				</div>
+			</div>
+			<!-- all_shop_list end -->
+
+			<!-- other_new_acticity_box start -->
+			<#include "/left.html" parse=false encoding="UTF-8">
+			<!-- other_new_acticity_box end -->
+
+		</div>
+
+
+		<!-- footer -->
+		<#include "/51_foot.html" parse=false encoding="UTF-8">
+
+
+
+	</div>
+</body>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/all_shop.js"></script>
+</html>

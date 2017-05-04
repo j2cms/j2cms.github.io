@@ -1,0 +1,32 @@
+<div class="topbar">
+		<ul>
+			<a style="float: left;">联系电话：18818232418</a>
+			<a href="login">登录</a>
+			<a href="register">注册帐号</a>
+
+		</ul>
+	</div>
+	<div class="nav">
+		<ul>
+			<li style="width: 200px; float: left !important;"><img src="${C.ctp}/template/shopyou/images/logo.png" height="80px" title="商友云"/></li>
+
+			<!-- 
+		    <li><a href="http://www.shopyou.cn/index/help.shtml">帮助与支持</a> </li>
+		    <li><a href="http://www.shopyou.cn/about/index.shtml">合作与联系</a> </li>
+		    <li><a href="http://www.shopyou.cn/user/index/index.shtml">会员中心</a> </li>
+		    <li><a href="">企业案例</a> </li>
+		    <li><a href="http://www.shopyou.cn/index/pro.shtml">功能介绍</a> </li>
+		    <li><a href="http://www.shopyou.cn/news/index.shtml">资讯动态</a> </li>
+		    <li><a href="./index_files/index.html" class="nhov">首页</a> </li>
+		     -->
+
+			<#if channelsDisplay??> <#list channelsDisplay as channel> <#if channel.type == "link">
+			<li><a href="${channel.link}" target="_blank">${channel.name}</a></li> <#else> <#if channel.path == "/">
+			<li><a href="${C.ctp}/${channel.id}.html">${channel.name}</a></li> <#else>
+			<li><a href="${C.ctp}${channel.path}index.html">${channel.name}</a></li> </#if> </#if> </#list> </#if>
+			<li><a href="${C.ctp}/" class="nhov">首页</a></li>
+
+
+		</ul>
+
+	</div>

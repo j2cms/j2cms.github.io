@@ -1,276 +1,478 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>捷兔网络J2CMS|开源 jsp cms | java cms </title>
-<meta name="description" content='J2CMS是一个基于JavaEE平台的轻量极的敏捷开发架构,实现了一个内容管理系统模型．集合了Spring + Struts + Hibernate + JPA + FreeMarker + MySQL 等技术。'/>
-<meta name="keywords" content='java cms,jsp cms'/>
-<link href="/J2CMS/template/j2cms_com/css/base.css" rel="stylesheet" type="text/css" />
-<link href="/J2CMS/template/j2cms_com/css/common.css" rel="stylesheet" type="text/css" />
-<link href="/J2CMS/template/j2cms_com/css/index.css" rel="stylesheet" type="text/css" />
-<script src="/J2CMS/template/j2cms_com/js/flashImg.js" language="javascript" type="text/javascript"></script>
+<title>捷兔网络官方|J2CMS|开源 jsp cms | java cms </title>
+<meta name="description" content='设计了一个基于 JavaEE 平台的轻量极的敏捷开发架构，实现了一个功能强大的内容管理系统，集成使用了 Spring/SpringMVC  + Hibernate + JPA + FreeMarker + MySQL 等技术。开源的版本为单个网站的系统，官方提免费建站的云平台。'/>
+<meta name="keywords" content='开源 java cms,开源 jsp cms'/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="/template/j2/css/index.css" rel="stylesheet" type="text/css" />
+
+<link href="/template/j2/css/style.css"  rel="stylesheet" type="text/css" />
+
+
+<script src="/template/j2/js/jquery.js" language="javascript" type="text/javascript"></script>
+<script src="/template/j2/js/ScrollPic.js" language="javascript" type="text/javascript"></script>
+<script src="/template/j2/js/jquery.iFadeSldie.pack.js" language="javascript" type="text/javascript"></script>
+
+<script language="javascript">
+
+	$(function() {
+		//SAMPLE-B调用---传入新的参数,将覆盖原有参数,未传入的使用默认值
+		$('div#slide_b').iFadeSlide( {
+			field : $('div#slide_b a'),
+			icocon : $('div.ico_b'),
+			hoverCls : 'high_b',
+			curIndex : 0, //索引值0起始,故此处设置为第3项高亮
+			interval : 5000
+		});
+	});
+
+</script>
+
+
 </head>
-       
 <body>
-<div id="container">
+
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/J2CMS/template/j2cms_com/css/head.css" rel="stylesheet" type="text/css" />
-<link href="/J2CMS/template/j2cms_com/css/cddh.css" rel="stylesheet" type="text/css" />
-<script src="/J2CMS/template/j2cms_com/js/common.js" type="text/javascript"></script>
-  <div id="head">    
-    	<div class="banner"></div>
-  		<div id="top">
-          <ul>
-          <li><a href="/J2CMS/">首页</a></li>
-					<li><a href="/J2CMS/7.html">版本</a></li>
-					<li><a href="/J2CMS/2.html">下载</a></li>
-					<li><a href="/J2CMS/10.html">教程</a></li>
-					<li><a href="/J2CMS/3.html">案例</a></li>
-					<li><a href="/J2CMS/8.html">演示</a></li>
-					<li><a href="/J2CMS/4.html">购买服务</a></li>
-					<li><a href="/J2CMS/9.html">参与开发</a></li>
-					<li><a href="/J2CMS/6.html">联系我们</a></li>
-          </ul>    
-        </div>
-</div><!--head end-->	<div id="main">
-<div id="main-center">
-         <div id="imageNews">
-             <div class="flash">
-            <script type="text/javascript">
-           		CreateFlash("finance_photo", "/J2CMS/template/j2cms_com/flash/imageNews.swf", 349, 250);
-                var xml="";
-                	xml=xml+"<p u='/template/j2/images/big/1.jpg' a='#' n='-'/>";
-                function getXml() {
-                	return "<?xml version='1.0' encoding='utf-8'?><root>"+xml+"</root>";
-                	}
-            </script>
-            </div>	  
-		</div> 
-        <div id="latestNews">
-           <div id="latestNewsBanner">&nbsp;最新动态</div>
-	           <li>［案例］<a href="/J2CMS/Article/9.html" 
-	           title="贵州省教育科学院" target="_blank">贵州省教育科学院</a>
-	           <span>[2013-03-01]</span></li>  
-	           <li>［版本］<a href="/J2CMS/Article/5.html" 
-	           title="2012年10月22日J2CMS发布新版本!" target="_blank">2012年10月22日J2CMS发布新版本!</a>
-	           <span>[2012-10-22]</span></li>  
-	           <li>［版本］<a href="/J2CMS/Article/4.html" 
-	           title="2012年03月25日J2CMS发布新版本!" target="_blank">2012年03月25日J2CMS发布新版本!</a>
-	           <span>[2012-03-25]</span></li>  
-	           <li>［案例］<a href="/J2CMS/Article/6.html" 
-	           title="捷免网络官方网站" target="_blank">捷免网络官方网站</a>
-	           <span>[2012-03-25]</span></li>  
-	           <li>［案例］<a href="/J2CMS/Article/7.html" 
-	           title="华中师范大学文学院" target="_blank">华中师范大学文学院</a>
-	           <span>[2012-03-25]</span></li>  
-           
- 		</div> 
-        <!--informpart begin -->
-        <div id="systemIntroduce">
-		       <div class="rigth_title">&nbsp;系统简介</div>
-		       		<div id="systemIntroduce-content">
-		      			     J2CMS是一个基于JavaEE平台的轻量极的敏捷开发架构，实现了一个内容管理系统，集成使用了Spring + SpringMVC + Hibernate + JPA + FreeMarker + MySQL 等技术。J2CMS是产品分支，J2CMS-SSH是开源分支。<br/><br/>更新时间:2013年05月20日<br/><br/>软件大小:24M  <br/><br/>
-<img src="template/T1/images/downicon.gif"/>下载：<u><a href="https://github.com/j2cms/J2CMS/zipball/master" target="_blank">J2CMS</a></u>
- <u><a href="https://github.com/j2cms/J2CMS-SSH/zipball/master" target="_blank">J2CMS-SSH</a></u>
-					</div>
-        </div> <!--informpart end -->
-        
-</div><!--main-center end-->
+<link href="/template/j2/css/style.css"  rel="stylesheet" type="text/css" />
+<link href="/template/j2/css/daohang.css"  rel="stylesheet" type="text/css" />
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
+<div class="top">
+	<div class="top_container">
+		<div class="top_right">
+			<a href="/index.html" style="text-decoration:none">
+                       <img src="/template/j2/images/home.png" style="vertical-align:middle;" /> 官方首页</a> | 
+			<a href="/10.html" style="text-decoration:none"><img src="/template/j2/images/course.png" style="vertical-align:middle;" style="text-decoration:none"/> 教   程</a>
 
-<div id="main-left">
-
-
-  <div class="channel">
-     <div class="channelName">&nbsp;&nbsp;模版下载</div>
-     <div>
-        <ul>
-    	</ul>
-    </div>
- </div>
-  <div class="channel">
-     <div class="channelName">&nbsp;&nbsp;常见问题</div>
-     <div>
-        <ul>
-    	</ul>
-    </div>
- </div>
-  <div class="channel">
-     <div class="channelName">&nbsp;&nbsp;版本</div>
-     <div>
-        <ul>
-	           <li><a href="/J2CMS/Article/5.html" 
-	           title='2012年10月22日J2CMS发布新版本!' target="_blank">2012年10月22日J2CMS发布新版本!</a>
-	           <span>[2012-10-22]</span></li> 
-	           <li><a href="/J2CMS/Article/4.html" 
-	           title='2012年03月25日J2CMS发布新版本!' target="_blank">2012年03月25日J2CMS发布新版本!</a>
-	           <span>[2012-03-25]</span></li> 
-	           <li><a href="/J2CMS/Article/3.html" 
-	           title='2012年2月8日J2CMS发布新版本!' target="_blank">2012年2月8日J2CMS发布新版本!</a>
-	           <span>[2012-02-11]</span></li> 
-	           <li><a href="/J2CMS/Article/2.html" 
-	           title='2011年9月27日J2CMS发布新版本!' target="_blank">2011年9月27日J2CMS发布新版本!</a>
-	           <span>[2011-09-27]</span></li> 
-	           <li><a href="/J2CMS/Article/1.html" 
-	           title='2011年5月21日J2CMS新版本发布!' target="_blank">2011年5月21日J2CMS新版本发布!</a>
-	           <span>[2011-05-22]</span></li> 
-    	</ul>
-    </div>
- </div>
-  <div class="channel">
-     <div class="channelName">&nbsp;&nbsp;教程</div>
-     <div>
-        <ul>
-    	</ul>
-    </div>
- </div>
-
-
-</div><!--main_left end-->
-
-
-
-<div id="ITservice" >
-	<div class="rigth_title">&nbsp;服务与支持</div>
-	<div id ="ITservice-content">
-		<img src="/J2CMS/template/j2cms_com/images/qq.gif" align="middle" alt="QQ" />&nbsp;<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=75214390&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="/J2CMS/template/j2cms_com/images/qq_online.gif" /></a>&nbsp;
-		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=304748568&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="http://wpa.qq.com/pa?p=2:304748568:41" /></a>
-		<br/><br/>
-		<img src="/J2CMS/template/j2cms_com/images/tel.gif" align="middle" alt="电话"/><b>18818232418</b><br/>
+<img src="/template/j2/images/login_icon.png" style="vertical-align:middle;" style="text-decoration:none" height="24" width="24"/><a href="/login" style="text-decoration:none"> 登录</a>/<a href="/register" style="text-decoration:none">注册</a>
+		</div>
 	</div>
 </div>
 
 
-<div id="main-center">   
-<div class="rigth_title">&nbsp;典型案例</div> 
-        <div id="systemAd">
+<div class="header">
+	<div class="header_top">
+		<div class="header_logo">
+		</div>
+		<div class="header_right">
+			<div class="header_QQ">
+				<img src="/template/j2/images/QQ.png" width="25" height="25" alt="QQ" />&nbsp;
+				<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=75214390&amp;site=qq&amp;menu=yes"><img title="点击与我会话" border="0" alt="点击与我会话" src="http://wpa.qq.com/pa?p=2:75214390:41" /></a>&nbsp;
+				
+				<img src="/template/j2/images/tele.png" width="209" height="28" alt="tele" />
+			</div>
+			<div>
+
+
+
+<!-- siteshares Button BEGIN -->
+		<div class="shares">
+			<div class="bshare-custom">
+				<div class="bsPromo bsPromo2"></div>
+				<a title="分享到QQ空间" class="bshare-qzone"></a>
+                                <a title="分享到人人网" class="bshare-renren"></a>
+				<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+				<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+				<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+			</div>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		</div>
+		<!-- siteshares Button END -->
+
+
+
+
+
+
+</div>
+		</div>
+	</div>
+    
+    
+	<div class="daohang">
+    
+	  	<div id="nav">
+			<ul>
+				<li><a href="/">首页</a></li>
+				<li><a href="/7.html">版本</a></li> 
+				<li><a href="/2.html">下载</a></li> 
+				<li><a href="/10.html">教程</a></li> 
+				<li><a href="/3.html">案例</a></li> 
+				<li><a href="/8.html">演示</a></li> 
+				<li><a href="/4.html">购买服务</a></li> 
+				<li><a href="/9.html">参与开发</a></li> 
+				<li><a href="/6.html">联系我们</a></li> 
+			</ul>
+		</div>
+	
+	</div>
+    
+    
+</div>
+
+<div class="all">
+<div class="container">
+	<div class="slider_show">
+		<div id="slide_b">
+        	 <a style="display: inline;" href="#" target="_blank"><img src="/U/2/41/1319C5C5-F6E2-398E-8B57-ED69BD785317.jpg" title="~"/></a>
+        	 <a style="display: inline;" href="#" target="_blank"><img src="/U/2/41/1F9EC1AC-1F00-8932-B8EF-F67A09236396.jpg" title="-"/></a>
+        	 <a style="display: inline;" href="#" target="_blank"><img src="/template/j2/images/big/1.jpg" title="-"/></a>
+                
+			<div class="ico_b">
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<div class="index_download">
+		<div class="index_download_title">新版本全新后台管理风格</div>
+		<a href="https://github.com/j2cms/J2CMS-SSH/zipball/master" target="_blank"><img src="/template/j2/images/index_download_btn.png" style="margin-left:45px;" /></a>
+		<div class="index_download_body">
+			<p>开发平台：SpringMVC/Struts + Hibernate + JPA + FreeMarker + MySQL/Oracle </p>
+			<p>软件大小：<span style="color:#d42148;font-size:14px;">25MB</span></p>
+			<p>更新时间：2014年08月06日</p>
+		</div>
+	</div>
+
+
+	<div class="clear"></div>
+
+	<div class="index_introduce">
+		<div class="index_introduce_titleBg">
+			<div class="index_introduce_title1">系统介绍</div><div class="index_title_right"><!--  <img src="/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /> 查看更多--></div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_1.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">内容管理</div>文本，文件轻松管理</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_2.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">权限控制</div>控制每个用户权限到每一个动作</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_3.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">静态页面</div>整站前台页面静态化，加速访问</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_4.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">安全稳定</div>基于Java EE，更安全，更稳定，更高效</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_5.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">数据库支持</div>支持mysql、oracle、MSSQL等主流数据库</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_6.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">字典管理</div>管理系统参数，灵活配置</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_7.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">模版管理</div>轻松管理网站风格</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="/template/j2/images/index_introduce_8.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">日志管理</div>记录用户操作行为，为系统安全提供依据</div>
+		</div>
+	</div>
+
+	<div class="index_announce">
+		<div class="index_announce_titleBg">
+			<div class="index_announce_title1">网站公告</div><div class="index_title_right"><img src="/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="1.html"> 查看更多</a></div>
+		</div>
+		<div class="index_announce_body">
+			<ul>
+			           <li>
+			           <img src="/template/j2/images/arrow5.gif" />
+［教程］<a href="/Article/20.html" target="_blank">
+			          
+							关于工程报错的总结
+	           </a>
+	           <span class="index_date">[07-23]</span></li>
+			           <li>
+			           <img src="/template/j2/images/arrow5.gif" />
+［案例］<a href="/Article/19.html" target="_blank">
+			          
+							戴南镇明俊不锈钢
+	           </a>
+	           <span class="index_date">[01-01]</span></li>
+			           <li>
+			           <img src="/template/j2/images/arrow5.gif" />
+［案例］<a href="/Article/17.html" target="_blank">
+			          
+							三人行网络
+	           </a>
+	           <span class="index_date">[06-27]</span></li>
+			           <li>
+			           <img src="/template/j2/images/arrow5.gif" />
+［案例］<a href="/Article/18.html" target="_blank">
+			          
+							时代亿宝
+	           </a>
+	           <span class="index_date">[06-27]</span></li>
+			           <li>
+			           <img src="/template/j2/images/arrow5.gif" />
+［案例］<a href="/Article/16.html" target="_blank">
+			          
+							五一悟空订餐网
+	           </a>
+	           <span class="index_date">[05-20]</span></li>
+           	</ul>
+		</div>
+	</div>
+	
+		
+	<div class="index_announce">
+		<div class="index_announce_titleBg">
+			<div class="index_announce_title1">版本</div><div class="index_title_right"><img src="/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="7.html"> 查看更多</a></div>
+		</div>
+		<div class="index_announce_body">
+			<ul>
+	           <li>
+	           <img src="/template/j2/images/arrow5.gif" />
+	           	<a href="/Article/13.html" target="_blank">
+	           	
+					新版官网风格测试中
+	           
+				</a>
+	           <span class="index_date">[2013-04-23]</span></li>  
+	           <li>
+	           <img src="/template/j2/images/arrow5.gif" />
+	           	<a href="/Article/12.html" target="_blank">
+	           	
+					新版本后台风格测试中!
+	           
+				</a>
+	           <span class="index_date">[2013-04-14]</span></li>  
+	           <li>
+	           <img src="/template/j2/images/arrow5.gif" />
+	           	<a href="/Article/10.html" target="_blank">
+	           	
+				     2013年03月20日J2CMS发布新
+	           
+				</a>
+	           <span class="index_date">[2013-03-20]</span></li>  
+	           <li>
+	           <img src="/template/j2/images/arrow5.gif" />
+	           	<a href="/Article/5.html" target="_blank">
+	           	
+				     2012年10月22日J2CMS发布新
+	           
+				</a>
+	           <span class="index_date">[2012-10-22]</span></li>  
+	           <li>
+	           <img src="/template/j2/images/arrow5.gif" />
+	           	<a href="/Article/4.html" target="_blank">
+	           	
+				     2012年03月25日J2CMS发布新
+	           
+				</a>
+	           <span class="index_date">[2012-03-25]</span></li>  
+		           
+			</ul>
+		</div>
+	</div>
+	
+	<div class="index_other">
+		<div class="index_other_titleBg">
+			<div class="index_other_title1">模版下载</div><div class="index_title_right"><img src="/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="12.html"> 查看更多</a></div>
+		</div>
+		<div class="index_other_body">
+			<ul>
+           
+		  </ul>
+		</div>
+	</div>
+
+	<div class="index_other">
+		<div class="index_other_titleBg">
+			<div class="index_other_title1">教程</div><div class="index_title_right"><img src="/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="10.html"> 查看更多</a></div>
+		</div>
+		<div class="index_other_body">
+			<ul>
+	           <li>
+	           <img src="/template/j2/images/arrow5.gif" />
+	           	<a href="/Article/20.html" target="_blank">
+	           <span class="index_container_font">关于工程报错的总结</span></a>
+	           <span class="index_date">[2014-07-23]</span></li>  
+	           <li>
+	           <img src="/template/j2/images/arrow5.gif" />
+	           	<a href="/Article/11.html" target="_blank">
+	           <span class="index_container_font">J2CMS模版设计指南</span></a>
+	           <span class="index_date">[2013-03-28]</span></li>  
+           
+          	</ul>
+		</div>
+	</div>
+
+	
+	<div class="index_article">
+		<div class="index_article_titleBg">
+			<div class="index_article_title1">常见问题</div><div class="index_title_right"><img src="/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="13.html"> 查看更多</a></div>
+		</div>
+		<div class="index_article_body">
+			<ul>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="index_example">
+		<div class="index_example_titleBg">
+			<div class="index_example_title1">成功案例</div><div class="index_title_right"><img src="/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="3.html"> 查看更多</a></div>
+		</div>
+		
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title> </title>
+<title></title>
 <style type="text/css" media="all">
 .d1 {
-	float:left;
-	margin:1px;
-	width:998px;
-	background-color:#EFEFEF;
-	height:auto;
-	overflow:hidden;
-	white-space:nowrap;
+	float: left;
+	width: 952px;
+	background-color: #EFEFEF;
+	height: auto;
+	overflow: hidden;
+	white-space: nowrap;
 	border: solid 0px #CCCCCC;
+	margin: 1px;
 }
+
 .d2 {
-	margin:0px auto;
-	background-color:#FF9933;
+	margin: 0px auto;
+	background-color: #FF9933;
 }
+
 .div2 {
-	width:auto;
-	height:auto;
-	font-size:12px;
-	float:left;
-	overflow:hidden;
+	width: auto;
+	height: auto;
+	font-size: 12px;
+	float: left;
+	overflow: hidden;
 }
+
 .div2 ul {
-	margin:0px;
-	padding:0px 0px;
-	list-style:none;
-	line-height:19px;
-	font-size:12px;
+	margin: 0px;
+	padding: 0px 0px;
+	list-style: none;
+	line-height: 19px;
+	font-size: 12px;
 }
-.div2 ul li{
-float:left;
-line-height:22px;
-margin:0px 2px 0px 2px;
-text-align:center;
-padding:0px;
-border:#103E63 1px solid;
+
+.div2 ul li {
+	float: left;
+	line-height: 22px;
+	margin: 0px 2px 0px 2px;
+	text-align: center;
+	padding: 0px;
+	border: #103E63 1px solid;
 }
-.div2 ul li a:link, a:visited {
-	color:#3F78CF;
-	text-decoration:none;
+
+.div2 ul li a:link,a:visited {
+	color: #666;
+	text-decoration: none;
 }
+
 .div2 ul li a:hover {
-	color:#FF00CC;
-	text-decoration:underline;
+	color: #FF00CC;
+	text-decoration: none;
 }
 </style>
 <script language="javascript" type="text/javascript">
-var s,s2,s3,s4,timer;
-function init(){
-s=getid("div1");
-s2=getid("div2");
-s3=getid("div3");
-s4=getid("scroll");
-s4.style.width=(s2.offsetWidth*12+100)+"px";
-s3.innerHTML=s2.innerHTML;
-timer=setInterval(mar,30)
-}
-function mar(){
-if(s2.offsetWidth<=s.scrollLeft){
-s.scrollLeft-=s2.offsetWidth;
-}else{s.scrollLeft++;}
-}
-function getid(id){
-return document.getElementById(id);
-}
-window.onload=init;
+	var s, s2, s3, s4, timer;
+	function init() {
+		s = getid("div1");
+		s2 = getid("div2");
+		s3 = getid("div3");
+		s4 = getid("scroll");
+		s4.style.width = (s2.offsetWidth * 12 + 100) + "px";
+		s3.innerHTML = s2.innerHTML;
+		timer = setInterval(mar, 30)
+	}
+	function mar() {
+		if (s2.offsetWidth <= s.scrollLeft) {
+			s.scrollLeft -= s2.offsetWidth;
+		} else {
+			s.scrollLeft++;
+		}
+	}
+	function getid(id) {
+		return document.getElementById(id);
+	}
+	window.onload = init;
 </script>
 </head>
 <body>
-<div class="d1" id="div1" onmouseover="clearInterval(timer)" onmouseout="timer=setInterval(mar,30)">
-  <div class="scroll" id="scroll">
-    <div class="div2" id="div2">
-      <ul>
-              <li>
-          <div class="pe_u_thumb"><a href="http://www.j2cms.com/Article/16.html" target="_blank"><img class="pic2" src="/U/2/41/CACF1FF7-58A1-9C49-EDD7-A6802B521AAD.png"  width="150" height="150" alt="我要悟空订餐网 " border="0" /></a></div>
-          <div class="pe_u_thumb_title"><a href="http://www.j2cms.com/Article/16.html" target="_blank">我要悟空订餐网</a><br /></div>
-        </li>
-        <li>
-          <div class="pe_u_thumb"><a href="http://www.j2cms.com/Article/9.html" target="_blank"><img class="pic2" src="/images/CASE/jky.gzjykyw.com-little.png"  width="150" height="150" alt="贵州省教育科学院 " border="0" /></a></div>
-          <div class="pe_u_thumb_title"><a href="http://www.j2cms.com/Article/9.html" target="_blank">贵州省教育科学院</a><br /></div>
-        </li>
-        <li>
-          <div class="pe_u_thumb"><a href="http://www.j2cms.com/Article/6.html" target="_blank"><img class="pic2" src="/images/CASE/j2cms.jpg"  width="150" height="150" alt="捷免网络官方网站 " border="0" /></a></div>
-          <div class="pe_u_thumb_title"><a href="http://www.j2cms.com/Article/6.html" target="_blank">捷免网络官方网站</a><br /></div>
-        </li>
-        <li>
-          <div class="pe_u_thumb"><a href="http://www.j2cms.com/Article/8.html" target="_blank"><img class="pic2" src="/images/CASE/198529.jpg"  width="150" height="150" alt="武汉废旧物质回收 " border="0" /></a></div>
-          <div class="pe_u_thumb_title"><a href="http://www.j2cms.com/Article/8.html" target="_blank">武汉废旧物质回收</a><br /></div>
-        </li>
-        <li>
-          <div class="pe_u_thumb"><a href="http://chinese.ccnu.edu.cn" target="_blank"><img class="pic2" src="/images/CASE/chinese.jpg"  width="150" height="150" alt="华中师范大学文学院 " border="0" /></a></div>
-          <div class="pe_u_thumb_title"><a href="http://chinese.ccnu.edu.cn" target="_blank">华中师范大学文学院</a><br /></div>
-        </li>
-      </ul>
-    </div>
-    <div id="div3" class="div2"></div>
-  </div>
-</div>
+	<div class="d1" id="div1" onmouseover="clearInterval(timer)" onmouseout="timer=setInterval(mar,30)">
+		<div class="scroll" id="scroll">
+			<div class="div2" id="div2">
+				<ul>
+					  
+					<li>
+						<div class="pe_u_thumb">
+							<a href="http://www.j2cms.com/Article/7.html" target="_blank"><img class="pic2" src="/images/CASE/chinese.jpg" width="150" height="150" alt="华中师范大学文学院 " border="0" /></a>
+						</div>
+						<div class="pe_u_thumb_title">
+							<a href="http://www.j2cms.com/Article/7.html" target="_blank">华中师范大学文学院</a><br />
+						</div>
+					</li> 
+					<li>
+						<div class="pe_u_thumb">
+							<a href="http://www.j2cms.com/Article/16.html" target="_blank"><img class="pic2" src="/U/2/41/EFC0B32E-EEF3-330B-E2A0-21FB54150543.png" width="150" height="150" alt="我要悟空订餐网 " border="0" /></a>
+						</div>
+						<div class="pe_u_thumb_title">
+							<a href="http://www.j2cms.com/Article/16.html" target="_blank">我要悟空订餐网</a><br />
+						</div>
+					</li> 
+					<li>
+						<div class="pe_u_thumb">
+							<a href="http://www.j2cms.com/Article/9.html" target="_blank"><img class="pic2" src="/images/CASE/jky.gzjykyw.com-little.png" width="150" height="150" alt="贵州省教育科学院 " border="0" /></a>
+						</div>
+						<div class="pe_u_thumb_title">
+							<a href="http://www.j2cms.com/Article/9.html" target="_blank">贵州省教育科学院</a><br />
+						</div>
+					</li> 
+					<li>
+						<div class="pe_u_thumb">
+							<a href="http://www.j2cms.com/Article/6.html" target="_blank"><img class="pic2" src="/images/CASE/j2cms.jpg" width="150" height="150" alt="捷免网络官方网站 " border="0" /></a>
+						</div>
+						<div class="pe_u_thumb_title">
+							<a href="http://www.j2cms.com/Article/6.html" target="_blank">捷免网络官方网站</a><br />
+						</div>
+					</li> 
+					<li>
+						<div class="pe_u_thumb">
+							<a href="http://www.j2cms.com/Article/8.html" target="_blank"><img class="pic2" src="/U/2/41/55744F5A-39D4-E8BE-ABFB-9C03B59BD0D7.jpg" width="150" height="150" alt="武汉永昌废旧物资回收有限公司 " border="0" /></a>
+						</div>
+						<div class="pe_u_thumb_title">
+							<a href="http://www.j2cms.com/Article/8.html" target="_blank">武汉永昌废旧物资回收有限公司</a><br />
+						</div>
+					</li>   
+				</ul>
+			</div>
+			<div id="div3" class="div2"></div>
+		</div>
+	</div>
 </body>
-</html>        </div>
+</html>		
+	</div>
+	
 </div>
 
+<div class="clear"></div>
 
-<div id="copyright">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/J2CMS/template/j2cms_com/css/foot.css" rel="stylesheet" type="text/css" />
-
-<div id="foot" align="center">
-  <div id="content">
-  <br/>
-  <span>捷兔网络官方网站&nbsp;&nbsp;&copy;2009-2013 J2CMS  &nbsp;&nbsp;
-  邮箱:j2cms.org@gmail.com&nbsp;
-  <a href="http://www.miibeian.gov.cn" target="_blank">鄂ICP备08102130号</a>
+<div class="footer">
+	<div class="footer_body">
+		<div class="footer_logo"><img src="/template/j2/images/logo.png" width="100px" height="50px"></div>
+		<div class="footer_line"><img src="/template/j2/images/line.png" width="300px" height="50px"></div>
+		<div class="footer_link">
+			 <wb:follow-button uid="1639717454" type="red_1" width="67" height="24" ></wb:follow-button><!--<a href="https://me.alipay.com/j2cms" target="_blank">捐助捷兔
+		</a>--></div>
+	
+		<div class="beian">
+捷兔网络官方网站&nbsp;&nbsp;&copy;2009-2014 J2CMS  &nbsp;&nbsp;
+  邮箱:j2cms@j2cms.org&nbsp;
+  鄂ICP备08102130号
   <script src="http://s87.cnzz.com/stat.php?id=1766140&web_id=1766140" language="JavaScript" charset="gb2312"></script>&nbsp;&nbsp;
-  </span>
-  </div>
+</div>
+		<div class="copyright">Powered by J2CMS</div>
+	</div>
 </div>
 </div>
-</div><!--main end -->
-
-
-
-</div><!--container end-->
-
 </body>
-</html><div style='float:left;width:100%;text-align:center;'><center>Powered by <a href='http://www.j2cms.com'  target='_blank'>J2CMS</a></center></div>
+</html>

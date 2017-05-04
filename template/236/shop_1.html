@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="${C.ctp}/template/wukong/style.css" media="screen" />
+<title>${entity.name}-${C.name}</title>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/cookie_function.js"></script>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/json.js"></script>
+</head>
+<body>
+<div class="body_other">
+<#include "/51_head.html" parse=false encoding="UTF-8">
+<!-- top -->
+
+
+<div class="shop_container" id="shop_container">
+	<!-- shop_body begin-->
+	<div class="shop_body">
+		<div class="shop_top">
+			<div class="shop_photo">
+				<img src='${C.ctp}${(entity.logoUrl)!""}' width="171px" height="128px" />
+			</div>
+			<div class="shop_info">
+				<div class="activity_shop_title" id="title_id" name="${entity.name}" value="${entity.id?c}">${entity.name}</div>
+				<p class="activity_shop_info">商家地址：${(entity.address)!""}</p>
+                                <p class="activity_shop_info">商家电话：${entity.telephone!""} </p>
+				<p class="activity_shop_info">营业时间：${entity.openingTime!""}</p>
+                                <p class="activity_shop_info">起送价格：${entity.startFare!"0"} 元&nbsp;&nbsp;&nbsp;货到付款</p>
+                               
+			</div>
+			<div class="user_button">
+				<!--  收藏暂时没做
+				<p><img src="../../template/wukong/images/shoucang_1.png" onmouseover="this.src='../../template/wukong/images/shoucang_2.png'" onmouseout="this.src='../../template/wukong/images/shoucang_1.png'" class="mouse_change" onmouseup="alert('功能暂不开放');" /></p>
+				 -->
+			</div>
+		</div>
+		<div class="shop_middle">
+			<div class="shop_menu_title">美食</div>
+			
+			<div class="shop_have_picture">
+				<#list entity.foods as food>
+				<#if food.imageURL?? >
+				<#if food.imageURL!="">
+				<div class="shop_have_picture_left">
+					<div class="shop_have_picture_produce_image"><img src="${C.ctp}${food.imageURL}" width="166px" height="128px"/></div>
+					<div class="shop_have_picture_info">
+						<p id="${food.id?c}" name="${food.name}" value="${food.price}">${food.name}</p>
+						<p>${food.price}元</p>
+						<p class="shop_have_picture_product_button"><img src="../../template/wukong/images/add_jingtouyun_1.png" onmouseover="this.src='../../template/wukong/images/add_jingtouyun_2.png'" onmouseout="this.src='../../template/wukong/images/add_jingtouyun_1.png'" class="mouse_change" onmouseup="get_product('${food.id?c}');" /></p>
+					</div>
+				</div>
+				</#if>
+				</#if>
+				</#list>
+			</div>
+			
+			<div class="shop_no_picture">
+				<#list entity.foods as food>
+				<#if food.imageURL == "">
+				<div class="shop_no_picture_right">
+					<div class="shop_no_picture_product_name" id="${food.id?c}" name="${food.name}" value="${food.price}">${food.name}</div>
+					<div class="shop_no_picture_product_price">${food.price}元</div>
+					<div class="shop_no_picture_product_button"><img src="../../template/wukong/images/add_jingtouyun_1.png" onmouseover="this.src='../../template/wukong/images/add_jingtouyun_2.png'" onmouseout="this.src='../../template/wukong/images/add_jingtouyun_1.png'" class="mouse_change" onmouseup="get_product('${food.id?c}');" /></div>
+				</div>
+				</#if>
+				</#list>
+			</div>
+		</div>
+	</div>
+	<!-- shop_body end -->
+	
+	<!-- other_shop_notice_box start -->
+	<div class="other_shop_notice_box">
+		<div class="other_new_activity_title">商店简介</div>
+			<div class="other_new_activity">
+				${entity.content!""}
+			</div>
+		
+	</div>
+	<!-- other_new_acticity_box end -->
+	
+	<!-- other_shop_notice_boxstart -->
+	<div class="other_shop_notice_box">
+		<div class="other_new_activity_title">商店公告</div>
+			<div class="other_new_activity">
+				${entity.notice!""}
+			</div>
+		
+	</div>
+	<!-- other_new_acticity_box end -->
+	
+	<div class="order">
+		<div class="other_new_activity_title">我的订单</div>
+		<div class="order_body" id="order_body">
+		</div>
+		<div class="all_price" id="all_price"></div>
+		<div class="submit_btn"><img id="submit_btn_pic" src="../../template/wukong/images/submit_btn_1.png" onmouseover="this.src='../../template/wukong/images/submit_btn_2.png'" onmouseout="this.src='../../template/wukong/images/submit_btn_1.png'" class="mouse_change" onmouseup="submit_order('${C.ctp}');" style="display:none;" /></div>
+	</div>
+</div>
+
+
+
+<!-- footer begin -->
+
+<#include "/51_foot.html" parse=false encoding="UTF-8">
+
+
+</div>
+</body>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/shop.js"></script>
+</html>

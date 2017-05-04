@@ -63,7 +63,7 @@
 		var name="";
     	var count = 0;
     	var chk = document.getElementsByName("ids");
-    	var nameArray = document.getElementsByName("names");
+    	
     	if(chk == null) 
     	{
 	        alert("请勾选要删除的记录！");
@@ -74,7 +74,7 @@
         	if(chk.checked) 
         	{
         		id = chk.value;
-        		name = nameArray.value;
+        		name = chk.title;
         		count++;
         	}
    	 	}
@@ -85,7 +85,7 @@
             	if(chk[i].checked) 
             	{
             		id += chk[i].value+",";
-            		name += nameArray[i].value+",";
+            		name += chk[i].title+",";;
                 	count++;
             	}
         	}
@@ -98,7 +98,7 @@
         	return  false;
    	 	}
    		document.getElementById("href").value = getHref();//设置操作完成后的返还URL
-    	if(document.getElementById("selector.entityState").value=="14") //'${selector.entityState}'
+    	if(document.getElementById("sl.entityState").value=="14") //'${sl.entityState}'
     	{
     		if(confirm("操作不可恢复,您确定删除吗？")){
 				location.href="delete/"+id+"?name="+name+"&href="+getHref();
@@ -109,6 +109,61 @@
    	   	}
 	}
 	
+	//原来的函数操作的是两个对象
+	//<input type='checkbox' name='ids' value="${entityBean.id}" /><input type="hidden" name='names' value="${entityBean.name}" />
+//	//批量删除多个实体,带实体名 。这里用MutiX()方式调用不成功,所以还是用这种方式
+//	function del() 
+//	{
+//		var id="";
+//		var name="";
+//    	var count = 0;
+//    	var chk = document.getElementsByName("ids");
+//    	var nameArray = document.getElementsByName("names");
+//    	if(chk == null) 
+//    	{
+//	        alert("请勾选要删除的记录！");
+//	        return  false;
+//    	}
+//    	if(chk[0] == null) 
+//    	{
+//        	if(chk.checked) 
+//        	{
+//        		id = chk.value;
+//        		name = nameArray.value;
+//        		count++;
+//        	}
+//   	 	}
+//   		else 
+//    	{
+//        	for(var i=0;i<chk.length;i++) 
+//        	{
+//            	if(chk[i].checked) 
+//            	{
+//            		id += chk[i].value+",";
+//            		name += nameArray[i].value+",";
+//                	count++;
+//            	}
+//        	}
+//        	id = id.substring(0,id.length-1);//去掉最后一个","
+//        	name = name.substring(0,name.length-1);
+//    	}
+//    	if(count==0) 
+//   		{
+//        	alert("请勾选要删除的记录！");
+//        	return  false;
+//   	 	}
+//   		document.getElementById("href").value = getHref();//设置操作完成后的返还URL
+//    	if(document.getElementById("sl.entityState").value=="14") //'${sl.entityState}'
+//    	{
+//    		if(confirm("操作不可恢复,您确定删除吗？")){
+//				location.href="delete/"+id+"?name="+name+"&href="+getHref();
+//    		}
+//    	}
+//   	 	else{
+//			location.href="recycle/"+id+"?name="+name+"&href="+getHref();//用post方式无法在url里加参数
+//   	   	}
+//	}
+//	
 
 	
 //	//批量删除多个实体,带实体名
@@ -124,7 +179,7 @@
 //	    		name += nameArray[d].value+","; //关键是这里获取到的不是正确的name
 //	    	}
 //	    	name = name.substring(0,name.length-1);//去掉最后一个","
-//			if(document.getElementById("selector.entityState").value=="14") //'${selector.entityState}'
+//			if(document.getElementById("sl.entityState").value=="14") //'${sl.entityState}'
 //	    	{
 //	    		if(confirm("操作不可恢复,您确定删除吗？")){
 //	    			location.href="delete/"+id+"?name="+name+"&href="+getHref();
@@ -142,7 +197,7 @@
 	{
 		var id = MultiX("ids","请勾选要删除的记录！");
 		if(id) {
-			if(document.getElementById("selector.entityState").value=="14") //'${selector.entityState}'
+			if(document.getElementById("sl.entityState").value=="14") //'${sl.entityState}'
 	    	{
 	    		if(confirm("操作不可恢复,您确定删除吗？")){
 					location.href="delete/"+id+"?href="+getHref();
@@ -228,7 +283,7 @@
 	 * @author GT  2013-04-14
 	 */
 	function MultiX(ids,tip){
-		var t =tip==null?"请勾选至少一条记录！":tip;
+		var t =(tip==null?"请勾选至少一条记录！":tip);
 		var id="";
     	var count = 0;
     	var chk = document.getElementsByName(ids);

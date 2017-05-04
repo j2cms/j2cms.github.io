@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${(C.fullName)!"J2CMS"}</title>
+<meta name="description" content='${C.description!""}'/>
+<meta name="keywords" content='${C.keywords!""}'/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="${C.ctp}/template/j2/css/index.css" rel="stylesheet" type="text/css" />
+
+<link href="${C.ctp}/template/j2/css/style.css"  rel="stylesheet" type="text/css" />
+
+
+<script src="${C.ctp}/template/j2/js/jquery.js" language="javascript" type="text/javascript"></script>
+<script src="${C.ctp}/template/j2/js/ScrollPic.js" language="javascript" type="text/javascript"></script>
+<script src="${C.ctp}/template/j2/js/jquery.iFadeSldie.pack.js" language="javascript" type="text/javascript"></script>
+
+<script language="javascript">
+
+	$(function() {
+		//SAMPLE-B调用---传入新的参数,将覆盖原有参数,未传入的使用默认值
+		$('div#slide_b').iFadeSlide( {
+			field : $('div#slide_b a'),
+			icocon : $('div.ico_b'),
+			hoverCls : 'high_b',
+			curIndex : 0, //索引值0起始,故此处设置为第3项高亮
+			interval : 5000
+		});
+	});
+
+</script>
+
+
+</head>
+<body>
+
+
+<#include "/head.html" parse=false encoding="UTF-8">
+
+
+<div class="all">
+<div class="container">
+	<div class="slider_show">
+		<div id="slide_b">
+		 <#if flashs??>
+         <#list flashs as flash>
+        	 <a style="display: inline;" href="${flash.linkURL}" target="_blank"><img src="${C.ctp}${flash.imageURL}" title="${flash.name}"/></a>
+         </#list>
+         </#if>
+                
+                <#-- 
+                	<a style="display: inline;" href="#" target="_blank">
+                		<img src="${C.ctp}/template/j2/images/big/1.jpg"/>
+                	</a>
+                	<a style="display: inline;" href="#" target="_blank">
+                		<img src="${C.ctp}/template/j2/images/big/2.jpg"/>
+                	</a>
+                	<a style="display: inline;" href="#" target="_blank">
+                		<img src="${C.ctp}/template/j2/images/big/3.jpg"/>
+                	</a>
+                	<a style="display: inline;" href="/host.html" target="_blank">
+                		<img src="${C.ctp}/template/j2/images/big/1.jpg"/>
+                	</a>
+                	<a style="display: inline;" href="#" target="_blank">
+                		<img src="${C.ctp}/template/j2/images/big/1.jpg"/>
+                	</a>
+                -->
+			<div class="ico_b">
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<div class="index_download">
+		<div class="index_download_title">新版本全新后台管理风格</div>
+		<a href="https://github.com/j2cms/J2CMS-SSH/zipball/master" target="_blank"><img src="${C.ctp}/template/j2/images/index_download_btn.png" style="margin-left:45px;" /></a>
+		<div class="index_download_body">
+			<p>开发平台：SpringMVC/Struts + Hibernate + JPA + FreeMarker + MySQL/Oracle </p>
+			<p>软件大小：<span style="color:#d42148;font-size:14px;">25MB</span></p>
+			<p>更新时间：2014年08月06日</p>
+		</div>
+	</div>
+
+
+	<div class="clear"></div>
+
+	<div class="index_introduce">
+		<div class="index_introduce_titleBg">
+			<div class="index_introduce_title1">系统介绍</div><div class="index_title_right"><!--  <img src="${C.ctp}/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /> 查看更多--></div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_1.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">内容管理</div>文本，文件轻松管理</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_2.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">权限控制</div>控制每个用户权限到每一个动作</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_3.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">静态页面</div>整站前台页面静态化，加速访问</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_4.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">安全稳定</div>基于Java EE，更安全，更稳定，更高效</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_5.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">数据库支持</div>支持mysql、oracle、MSSQL等主流数据库</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_6.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">字典管理</div>管理系统参数，灵活配置</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_7.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">模版管理</div>轻松管理网站风格</div>
+		</div>
+		<div class="index_introduce_list">
+			<img src="${C.ctp}/template/j2/images/index_introduce_8.png" class="border_image" width="80px" height="65px" /><div class="index_introduce_font"><div class="decro_font">日志管理</div>记录用户操作行为，为系统安全提供依据</div>
+		</div>
+	</div>
+
+	<div class="index_announce">
+		<div class="index_announce_titleBg">
+			<div class="index_announce_title1">网站公告</div><div class="index_title_right"><img src="${C.ctp}/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="1.html"> 查看更多</a></div>
+		</div>
+		<div class="index_announce_body">
+			<ul>
+				 <#if latestArticles?? >
+				   <#list latestArticles as a>				   
+			           <li>
+			           <#if (a.recommendLevel == 0)>
+			           <img src="${C.ctp}/template/j2/images/arrow5.gif" />
+			           </#if>
+			           <#if (a.recommendLevel > 0)>
+			           <img src="${C.ctp}/template/j2/images/index_teach.png" />
+			           </#if>［${a.channel.name!""}］<a href="${C.ctp}${a.channel.contentPath}${a.id?c}.html" target="_blank">
+			          
+			            <#if a.name?length lt 11>   
+							${a.name}
+						<#else> 
+						     ${a.name[0..10]}
+						</#if>
+	           </a>
+	           <span class="index_date">[${a.releaseDate?substring(5)}]</span></li>
+		           </#list> 
+		           </#if>
+           	</ul>
+		</div>
+	</div>
+	
+		
+	<div class="index_announce">
+		<div class="index_announce_titleBg">
+			<div class="index_announce_title1">版本</div><div class="index_title_right"><img src="${C.ctp}/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="7.html"> 查看更多</a></div>
+		</div>
+		<div class="index_announce_body">
+			<ul>
+		   <#if versionChannelArticle?? >
+		   <#list versionChannelArticle as a>				   
+	           <li>
+	           <#if (a.recommendLevel == 0)>
+	           <img src="${C.ctp}/template/j2/images/arrow5.gif" />
+	           </#if>
+	           <#if (a.recommendLevel > 0)>
+	           <img src="${C.ctp}/template/j2/images/index_teach.png" />
+	           </#if>
+	           	<a href="${C.ctp}${a.channel.contentPath}${a.id?c}.html" target="_blank">
+	           	
+	           	<#if a.name?length lt 19>   
+					${a.name}
+				<#else> 
+				     ${a.name[0..18]}
+				</#if>
+	           
+				</a>
+	           <span class="index_date">[${a.releaseDate!""}]</span></li>  
+           </#list> 
+           </#if>
+		           
+			</ul>
+		</div>
+	</div>
+	
+	<div class="index_other">
+		<div class="index_other_titleBg">
+			<div class="index_other_title1">模版下载</div><div class="index_title_right"><img src="${C.ctp}/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="12.html"> 查看更多</a></div>
+		</div>
+		<div class="index_other_body">
+			<ul>
+			 <#if templatelChanelArticle?? >
+		     <#list templatelChanelArticle as a>				   
+	           <li>
+	           <#if (a.recommendLevel == 0)>
+	           <img src="${C.ctp}/template/j2/images/arrow5.gif" />
+	           </#if>
+	           <#if (a.recommendLevel > 0)>
+	           <img src="${C.ctp}/template/j2/images/index_teach.png" />
+	           </#if>
+	           	<a href="${C.ctp}${a.channel.contentPath}${a.id?c}.html" target="_blank">
+	           <span class="index_container_font">${a.name!""}</span></a>
+	           <span class="index_date">[${a.releaseDate!""}]</span></li>  
+           </#list> 
+           </#if>
+           
+		  </ul>
+		</div>
+	</div>
+
+	<div class="index_other">
+		<div class="index_other_titleBg">
+			<div class="index_other_title1">教程</div><div class="index_title_right"><img src="${C.ctp}/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="10.html"> 查看更多</a></div>
+		</div>
+		<div class="index_other_body">
+			<ul>
+			 <#if coureseChanelArticle?? >
+		     <#list coureseChanelArticle as a>				   
+	           <li>
+	           <#if (a.recommendLevel == 0)>
+	           <img src="${C.ctp}/template/j2/images/arrow5.gif" />
+	           </#if>
+	           <#if (a.recommendLevel > 0)>
+	           <img src="${C.ctp}/template/j2/images/index_teach.png" />
+	           </#if>
+	           	<a href="${C.ctp}${a.channel.contentPath}${a.id?c}.html" target="_blank">
+	           <span class="index_container_font">${a.name!""}</span></a>
+	           <span class="index_date">[${a.releaseDate!""}]</span></li>  
+           </#list> 
+           </#if>
+           
+          	</ul>
+		</div>
+	</div>
+
+	
+	<div class="index_article">
+		<div class="index_article_titleBg">
+			<div class="index_article_title1">常见问题</div><div class="index_title_right"><img src="${C.ctp}/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="13.html"> 查看更多</a></div>
+		</div>
+		<div class="index_article_body">
+			<ul>
+			<#if mostFAQChanelArticle?? >
+		   	<#list mostFAQChanelArticle as a>				   
+	           <li>
+	           <#if (a.recommendLevel == 0)>
+	           <img src="${C.ctp}/template/j2/images/arrow5.gif" />
+	           </#if>
+	           <#if (a.recommendLevel > 0)>
+	           <img src="${C.ctp}/template/j2/images/index_teach.png" />
+	           </#if>［${a.channel.name!""}］<a href="${C.ctp}${a.channel.contentPath}${a.id?c}.html" 
+	          target="_blank">${a.name!""}</a>
+	           <span>[${a.releaseDate!""}]</span></li>  
+           </#list> 
+           </#if>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="index_example">
+		<div class="index_example_titleBg">
+			<div class="index_example_title1">成功案例</div><div class="index_title_right"><img src="${C.ctp}/template/j2/images/more.png" width="15" height="15" style="vertical-align:middle;" /><a href="3.html"> 查看更多</a></div>
+		</div>
+		
+		<#include "picad.html" encoding="UTF-8">
+		
+	</div>
+	
+</div>
+
+<div class="clear"></div>
+
+<#include "/foot.html" parse=false encoding="UTF-8">
+
+</div>
+</body>
+</html>

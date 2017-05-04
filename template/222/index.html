@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="${C.ctp}/template/wukong/style.css" media="screen" />
+<title>${C.fullName}</title>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/cookie_function.js"></script>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/jquery.js"></script>
+<script type="text/javascript" src="${C.ctp}/template/wukong/js/index.js"></script>
+<script type="text/javascript">
+/* init index_logos begin */
+var index_logos = new Array();
+
+<#if recommondShops??>
+<#list recommondShops as shop>
+	index_logos.push("${C.ctp}${shop.logoUrl}");
+</#list>
+</#if>
+/* init index_logos end */
+</script>
+</head>
+<body>
+<div class="body_index">
+
+<#include "/head.html" parse=false encoding="UTF-8">
+
+
+<!-- index_show begin -->
+<br />
+<div class="index_show">
+	<div class="index_logo_box">
+		<span class="index_logo_box_contain">
+
+		<#if recommondShops??>
+		<#list recommondShops as shop>
+			<a href="${C.ctp}/shop/${shop.id?c}/index.html" target="_blank"><img id="index_logo_1" src="${C.ctp}${shop.logoUrl}" title="${shop.name}" class="mouse_change" width="101px" height="101px" style="border:1px solid #fdc53e ;margin-left:5px;" /></a>
+		</#list>
+		</#if>
+
+		</span>
+		
+	</div>
+	<div class="index_new_activity_bg">
+	<div class="index_new_activity_box">
+		<div id="demo_activity">
+			<div id="indemo_activity">
+				<div id="demo1_activity">
+					<table class="index_new_activity">
+
+						 <#if activeArticles ??>
+						   <#list activeArticles as a>
+							  
+							   <tr><td><img src="${C.ctp}/template/wukong/images/laba.png" /></td><td>
+							   <a href="Article/${a.id?c}.html" title="${a.name}" target="_blank">${a.name!""}</a>
+							   <span>[${a.releaseDate!""}]</span></li>  
+							   </td></tr>
+
+						   </#list> 	</#if>
+						
+
+					</table>
+				</div>
+				<div id="demo2_activity"></div>
+			</div>
+		</div>
+	</div>
+	<div class="index_new_activity_clickmeformore">
+		<a href="3.html"><img src="${C.ctp}/template/wukong/images/index_clickmeformore_1.png" onmouseover="this.src='${C.ctp}/template/wukong/images/index_clickmeformore_2.png';this.style.cursor='hand';" onmouseout="this.src='${C.ctp}/template/wukong/images/index_clickmeformore_1.png'" class="mouse_change" /></a>
+	</div>
+	</div>
+</div>
+<!-- index_show end -->
+<!-- sign begin -->
+<div class="sign">
+	<a href="shop/index.html"><img src="${C.ctp}/template/wukong/images/sign_1_0.png" onmouseover="this.src='${C.ctp}/template/wukong/images/sign_1_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/sign_1_0.png'" class="mouse_change" /></a>
+	<a href="shop/1002/index.html" target="_blank"><img src="${C.ctp}/template/wukong/images/sign_2_0.png" onmouseover="this.src='${C.ctp}/template/wukong/images/sign_2_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/sign_2_0.png'" class="mouse_change" /></a>
+	<a href="shop/1003/index.html" target="_blank"><img src="${C.ctp}/template/wukong/images/sign_3_0.png" onmouseover="this.src='${C.ctp}/template/wukong/images/sign_3_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/sign_3_0.png'" class="mouse_change" /></a>
+	<a href="${C.ctp}/circle/index.html"><img src="${C.ctp}/template/wukong/images/sign_4_0.png" onmouseover="this.src='${C.ctp}/template/wukong/images/sign_4_1.png'" onmouseout="this.src='${C.ctp}/template/wukong/images/sign_4_0.png'" class="mouse_change" /></a>
+</div>
+<!-- sign end-->
+<!-- slideshow_announce begin -->
+<div class="slideshow_announce">
+        <div class="slideshow" id="slideshow"> 
+                <div id="showimg">
+                <#if flashs??>
+                <#list flashs as flash>
+                	<a href="${flash.linkURL}" target="_blank"><img class="attachment-small" title="${flash.name}" src="${C.ctp}${flash.imageURL}"  class="mouse_change"/></a>
+                </#list>
+                </#if>
+			
+
+                </div>
+                <div class="opacity">
+                 <div class="operate" id="operate">
+        	        <span class="hov">1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+                </div>
+        </div>
+	<div class="announce">
+		<div class="announce_title">
+			网站公告
+		</div>
+		<div class="announce_content">
+			<ul>
+				   <#if noticeArticles ??>
+				   <#list noticeArticles as a>
+					   <li><img src="${C.ctp}/template/wukong/images/gonggaopai.png" class="small_icon" />［${a.channel.name!""}］<a href="Article/${a.id?c}.html" 
+					   title="${a.name}" target="_blank">${a.name!""}</a>
+					   <span>[${a.releaseDate!""}]</span></li>  
+				   </#list> </#if>
+				 
+
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- slideshow_announce end-->
+<!-- footer begin -->
+<#include "/foot.html" parse=false encoding="UTF-8">
+<!-- footer end -->
+</div>
+</body>
+</html>

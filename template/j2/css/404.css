@@ -1,0 +1,14 @@
+
+
+
+
+
+/* artical */
+.artical_container{width:960px;margin-top:10px;}
+.artical_title{font-size:22px; font-weight:bold;text-align:center;margin-bottom:50px;}
+.artical_para_title{font-size:18px;font-weight:bold; text-align:left;margin-bottom:10px;margin-top:20px;}
+.artical{width:858px;background-color:#fff;border:1px solid #e98e01;float:left;padding:50px;line-height:30px;}
+.artical_menu{background-color:#fff;border:1px solid #e98e01;float:right;height:300px;width:150px;}
+.artical_line{height:2px;background-color:#ffc73f;}
+.artical_menu_title{text-align:center;font-weight:bold;font-size:14px;padding:15px;background-color:#fffaeb;margin:1px 1px 1px 0px;}
+.artical_menu_title a {text-decoration:none;}

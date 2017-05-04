@@ -37,11 +37,11 @@ a:hover{color:#335509; text-decoration:underline;}
 
 
 /* login */
-.login{width:960px;height:400px;background-color:#fff;margin-top:20px;}
+.login{width:960px;height:400px;background-color:#fff;margin-top:25px;}
 .login_container{width:860px;height:300px;padding-top:30px;vertical-align:middle;}
 .login_title{font-size:18px;font-weight:bold;padding-left:50px;}
 .login_line{height:3px;width:948px;background:url(../images/login_line.png) no-repeat 0 0;margin-top:10px;}
-.login_body{height:300px;width:800px;margin-top:30px;padding-left:50px;line-height:50px;}
+.login_body{height:300px;width:800px;margin-top:15px;padding-left:50px;line-height:50px;}
 .login_left{float:left;}
 #login_name ,#login_password{width:300px;height:25px;}
 .login_right{float:right;margin-right:100px;text-align:center;}
@@ -58,13 +58,3 @@ a:hover{color:#335509; text-decoration:underline;}
 #register_address{width:500px;height:25px;}
 #register_check{width:100px;height:25px;}
 
-
-/* artical */
-.artical_container{width:960px;height:700px;margin-top:10px;}
-.artical_title{font-size:22px; font-weight:bold;text-align:center;margin-bottom:50px;}
-.artical_para_title{font-size:18px;font-weight:bold; text-align:left;margin-bottom:10px;margin-top:20px;}
-.artical{width:858px;height:600px;background-color:#fff;border:1px solid #e98e01;float:left;padding:50px;line-height:30px;}
-.artical_menu{background-color:#fff;border:1px solid #e98e01;float:right;height:300px;width:150px;}
-.artical_line{height:2px;background-color:#ffc73f;}
-.artical_menu_title{text-align:center;font-weight:bold;font-size:14px;padding:15px;background-color:#fffaeb;margin:1px 1px 1px 0px;}
-.artical_menu_title a {text-decoration:none;}

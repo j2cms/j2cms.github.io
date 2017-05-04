@@ -72,7 +72,8 @@ function start_upload() {
 		swfu.setPostParams({
 			'entityState' : $("#entityState").val(),
 			'kind' : $("#kind").val(),
-			'name' : "0" //这个要有，原因未知
+			'name' : "0", //这个要有，因为name不能为空
+			'shopId' : "0"
 		});
 		swfu.startUpload();
 

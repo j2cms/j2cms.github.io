@@ -27,6 +27,7 @@ button,input,value {
 	vertical-align: middle;
 	height: 30px;
 	line-height: 28px;
+	border: #888 solid 1px;
 }
 
 select {
