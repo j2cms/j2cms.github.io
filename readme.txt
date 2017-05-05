@@ -1,56 +1,51 @@
-﻿捷兔网络官方网站 http://www.j2cms.com http://www.j2cms.org
+捷兔网络官方网站 http://www.j2cms.com
 
-J2CMS是一个基于JavaEE平台的轻量极的敏捷开发架构，实现了一个内容管理系统，集成使用了Spring+ SpringMVC+ Hibernate + JPA + FreeMarker + MySQL 等技术。
+J2CMS-SSH是J2CMS的开源版本，我们设计了一个基于JavaEE平台的轻量极的敏捷开发架构，实现了一个具有基本功能的内容管理系统，集成使用了Spring+ Struts+ Hibernate + JPA + FreeMarker + MySQL 等技术。
 
 开发环境:
-eclipse-jee-juno-SR1-win32-x86_64
+eclipse-jee,64位
 JDK 1.6
 Apache tomcat 7.0
 MySQL 5.5
 系统依赖的其它jar包版本可以在lib目录里查看
 
 使用方式:
-直接安装部署在Tomcat等容器中：
-1.将数据库文件（在根目录）j2cms.sql 导入数据库。
-　　方法一,用MySQLAdministrator导入
-　　方法二,用MySQL命令导入：
-	mysql> create database j2cms;
-	mysql> use  j2cms;
-	mysql> source d:\j2cms.sql ;
-2.将J2CMS拷贝到Tomcat的webapps目录.
-3.修改配置文件 WEB-INF\classes\META-INF\persistence.xml 中的数据库配置信息
-4.修改配置文件 WEB-INF\classes\application.properties 中的数据库配置信息
-5.启动Tomcat,通过http://127.0.0.1:8080/J2CMS 访问主页
-6.管理后台路径  http://127.0.0.1:8080/J2CMS/login 测试帐号 admin 密码 admin
-7.注意改变程序目录名,比如将J2CMS改为MyWeb后,需要在管理后台重新生成静态表页才能正常显示,生成静态页面的顺序是先生成首页静态文件,再生成栏目和文章的静态页面
-8.配置一个带域名的主机，以下是在tomcat的server.xml中配置一个Host的示例
-<Host name="127.0.0.2"  appBase="F:/web"
-            unpackWARs="true" autoDeploy="true"
-            xmlValidation="false" xmlNamespaceAware="false">
-	         <Alias>www.j2cms.com</Alias>
-             <Context path="" docBase="F:/web/J2CMS" debug="0" reloadable="true"/>
-</Host>
+导入Eclipse：
+1.先建一个名为J2CMS-SSH的工程
+2.将src和WebContent目录内容分别拷到工程中对应的目录
+3.j2cms-ssh.sql是数据库，需要导入MySQL中，
+	方法一,用MySQLAdministrator导入
+	方法二,用MySQL命令导入：
+	mysql> create database j2cms-ssh;
+	mysql> use  j2cms-ssh;
+	mysql> source d:\j2cms-ssh.sql ;
+4.修改src\META-INF\persistence.xml 文件中数据库配置。
+5.将工程用tomcat运行,管理后台路径 /login  如 http://127.0.0.1:8080/J2CMS-SSH/login 测试帐号 admin 密码 admin
+6.注意改变程序目录名,比如将J2CMS-SSH改为MyWeb后,需要在管理后台重新生成静态表页才能正常显示,生成静态页面的顺序是先生成首页静态文件,再生成栏目和文章的静态页面
 
+导入MyEclipse：
+1.先建一个名为J2CMS-SSH的工程
+2.将src和WebContent(改名为WebRoot后)目录内容分别拷到工程中对应的目录
+3.其它步骤参考导入Eclipse。
+==================================================================
+关于工程部署时出现错误的总结，请点这里：
+http://www.j2cms.com/Article/20.html
+==================================================================
+关注最新开发进度请加官方QQ群 117199347
+==================================================================
 
-
-
-
-
-关注最新开发进度请加官方QQ群31309177 [已满] 154615448 [已满] 196170407 [已满] 117199347
 
 what's new
+==================================================================
+2013.05.20
+1.全新后台界面风格
+2.若干bug修正
 =================================
-2013.05.10
-1.增加文件管理模块
-=================================
-2013.04.16
-1.将FCKEditor->CKEditor
-=================================
-2013.04.14
-1.全新的后台界面风格,感谢Lwite
-2.修正若干BUG
-3.去掉view里多余的页面
-4.兼容firefox
+2013.03.23
+1.更新J2CMS-SSH的jar包,包括sping,hibernate,struts等全部更新到最新
+2.修正AdminLoginValidateFilter的Bug，适应tomcat6
+3.ConfigListener放入org包
+4.修正了生成首页时的报错
 =================================
 2013.03.20
 1.发布基于SpringMVC的J2CMS的安装包
